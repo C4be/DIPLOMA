@@ -1,6 +1,6 @@
 # DIPLOMA
 
-*My Master's degree*
+*My Master's degree* 🥹
 
 ---
 
