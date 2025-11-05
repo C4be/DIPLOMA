@@ -1,0 +1,74 @@
+% Author: Based on title_page.sty by CatInCosmicSpace, adapted for Otzyv
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{23-nauch-ruc}[2025/11/05 v1.0 Отзыв научного руководителя]
+
+% Require the same packages as title_page.sty
+\RequirePackage{fancyhdr}
+\RequirePackage{tabto}
+\RequirePackage[normalem]{ulem}
+\RequirePackage[usestackEOL]{stackengine}
+\RequirePackage{lineno}
+\RequirePackage{xstring}
+\RequirePackage{ifthen}
+
+% Reuse definitions from title_page.sty (assume it's loaded first)
+% If needed, redefine or add new ones here, e.g.:
+% \def\reviewtext#1{\gdef\@reviewtext{#1}} % For filling the review, but leave blank for form
+% \def\@reviewtext{} 
+
+% Header (same as title_page.sty)
+\newcommand\makeOtzyvHeader{
+\noindent\begin{minipage}{0.05\textwidth}
+\includegraphics[scale=0.4]{inc/mai.pdf}
+\end{minipage}
+\hfill
+\begin{minipage}{0.85\textwidth}\raggedleft
+\begin{center}
+\fontsize{11pt}{10pt}\selectfont
+\textbf{МИНИСТЕРСТВО НАУКИ И ВЫСШЕГО ОБРАЗОВАНИЯ \\
+                РОССИЙСКОЙ ФЕДЕРАЦИИ \\
+\hfill\break
+                ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ \\
+                ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ВЫСШЕГО ОБРАЗОВАНИЯ \\
+                <<МОСКОВСКИЙ АВИАЦИОННЫЙ ИНСТИТУТ
+} \\
+            (национальный исследовательский университет)>>
+\end{center}
+\end{minipage}
+\noindent\parbox[t][24pt][c]{\textwidth}{\rule{\textwidth}{1.5pt}}
+}
+
+% Main content for the review form
+\newcommand\fillOtzyv{
+    \begingroup
+        \fontsize{12pt}{16pt}\selectfont
+        \noindent
+        \textbf{Обучающийся} \uline{\hfill\@student\hfill} \\
+        \textbf{Институт (Филиал)} \uline{\hspace{1cm}\@faculty\hfill} \textbf{Кафедра} \uline{\hspace{1cm}\@department\hfill} \\
+        \textbf{Группа} \uline{\@group} \textbf{Направление подготовки} \expandafter\uline\expandafter{\expanded{\@speciality}\hfill} \\
+        \textbf{\profileType} \uline{\hspace{1cm}\@profile\hfill} \\
+        \textbf{Квалификация:} \uline{\textbf{\degree}\hfill} \\
+        \textbf{Наименование темы:} \expandafter\uline\expandafter{\expanded{\@theme}\hfill} \\
+        \textbf{Руководтель:} \expandafter\uline\expandafter{\expanded{\@supervisor}\hfill} \\
+    \endgroup
+
+    \vfill
+
+    \noindent\expandafter\uline\expandafter{\expanded{Выпускная квалификационная работа студента Иванова Ивана Ивановича на тему «Разработка информационной системы учёта заявок» выполнена на высоком уровне.\\Студент проявил инициативу, самостоятельность и ответственность при выполнении всех этапов работы. Материал изложен логично, последовательно и грамотно.\\Полученные результаты имеют практическую ценность и могут быть использованы для дальнейшего совершенствования систем автоматизации.\\Работа соответствует предъявляемым требованиям к ВКР, а её автор заслуживает оценки «отлично» и допуска к защите.}\hfill} \\
+    \noindent\uline{\hfill Работа проверена на объем заимствования. \% заимствования - \hfill} \\
+    \noindent\textbf{Заключение:}\uline{\hfill Все чики пуки \hfill} \\
+
+    % Plagiarism check and conclusion
+    \vfill
+    \noindent \uline{\hspace{0.5cm}} \uline{\hspace{2cm}} \the\year\ \text{г.} \hfill \textbf{Руководитель} \uline{\hspace{3cm}}
+
+}
+
+% Command to generate the page (analogous to \maketitle)
+\newcommand\makeotzyv{
+\newpage
+\thispagestyle{empty} % No page number or header
+\makeOtzyvHeader
+\fillOtzyv
+\clearpage
+}
