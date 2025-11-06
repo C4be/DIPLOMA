@@ -17,6 +17,7 @@
 *.toc
 *.synctex.gz
 *.xdy
+*.xdv
 
 # Build files
 /.latexmkrc
