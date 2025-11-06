@@ -1,11 +1,23 @@
 .DS_Store
+
+# LaTeX intermediate files
 *.aux
-*.bbl
 *.bcf
 *.fdb*
 *.fls
 *.log
 *.xml
-*.gz
 *.blg
 *.glo*
+*.gls
+*.ist
+*.lof
+*.lot
+*.out
+*.toc
+*.synctex.gz
+*.xdy
+
+# Build files
+/.latexmkrc
+latex.out
