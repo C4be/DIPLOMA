@@ -15,8 +15,8 @@
 Проект разделен на два основных блока:
 
 **1. Текст диплома & презентация:**
-* [/latex/document](./latex/document/README.md)   
-* [/latex/prezentation](./latex/prezentation/README.md)
+* [/latex/document](./tex/document/README.md)   
+* [/latex/prezentation](./tex/prezentation/README.md)
 
 **2. Практическая часть проекта:**
 * [/ai_assistant](./ai_assistant/README.md)
