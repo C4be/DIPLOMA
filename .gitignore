@@ -18,6 +18,10 @@
 *.synctex.gz
 *.xdy
 *.xdv
+*.nav
+*.snm
+*.vrb
+*.bbl*
 
 # Build files
 /.latexmkrc

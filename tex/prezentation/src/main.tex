@@ -1,0 +1,232 @@
+% 1. Настройка формата 16:9
+\documentclass[10pt, aspectratio=169, unicode]{beamer}
+
+% --- Шрифты и Язык (Специфика XeLaTeX) ---
+\usepackage{fontspec}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\usepackage{polyglossia}
+\setdefaultlanguage{russian}
+\setotherlanguage{english}
+
+% --- НАСТРОЙКА ШРИФТОВ (Исправленная версия) ---
+\setmainfont{Times New Roman} 
+\setsansfont{Arial} 
+\setmonofont{Courier New}
+
+% Добавляем явное указание шрифтов для кириллицы (решает твою ошибку)
+\newfontfamily\russianfont{Times New Roman}
+\newfontfamily\russianfontsf{Arial}
+\newfontfamily\russianfonttt{Courier New} 
+
+\usefonttheme{serif}
+
+% --- Цвета и Тема (Стиль МАИ) ---
+% Используем тему Madrid, но меняем цвета
+\usetheme{Madrid}
+
+% Определяем цвет МАИ (примерный голубой)
+\definecolor{maiblue}{RGB}{0, 114, 188} 
+\definecolor{maigray}{RGB}{240, 240, 240}
+
+% Применяем цвета
+\usecolortheme[named=maiblue]{structure} % Основной цвет элементов
+\setbeamercolor{frametitle}{bg=maiblue, fg=white} % Заголовок слайда
+\setbeamercolor{title in head/foot}{bg=maiblue, fg=white} % Нижний бар
+
+% Убираем навигационные значки (они обычно мешают)
+\setbeamertemplate{navigation symbols}{}
+
+% --- Пакеты ---
+\usepackage{graphicx}  % Картинки
+\usepackage{booktabs}  % Красивые таблицы
+\usepackage{caption}   % Настройка подписей
+\captionsetup[figure]{labelformat=simple, labelsep=endash, name=Рис.}
+\captionsetup[table]{labelformat=simple, labelsep=endash, name=Табл.}
+
+% --- Оформление кода (Python) ---
+\usepackage{listings}
+\usepackage{xcolor}
+
+% Цвета для кода
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{pythonstyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize, % Шрифт кода
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    % Нумерация строк слева
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2,
+    language=Python                  % Язык по умолчанию
+}
+\lstset{
+  extendedchars=true,
+  keepspaces=true,
+  % Этот блок сопоставляет символы, чтобы xelatex их не терял
+  literate={а}{{\cyra}}1 {б}{{\cyrb}}1 {в}{{\cyrv}}1 {г}{{\cyrg}}1 {д}{{\cyrd}}1 {е}{{\cyre}}1 {ё}{{\"{\cyre}}}1 {ж}{{\cyrzh}}1 {з}{{\cyrz}}1 {и}{{\cyri}}1 {й}{{\cyrj}}1 {к}{{\cyrk}}1 {л}{{\cyrl}}1 {м}{{\cyrm}}1 {н}{{\cyrn}}1 {о}{{\cyro}}1 {п}{{\cyrp}}1 {р}{{\cyrr}}1 {с}{{\cyrs}}1 {т}{{\cyrt}}1 {у}{{\cyru}}1 {ф}{{\cyrf}}1 {х}{{\cyrh}}1 {ц}{{\cyrc}}1 {ч}{{\cyrch}}1 {ш}{{\cyrsh}}1 {щ}{{\cyrshch}}1 {ъ}{{\cyrhrdsn}}1 {ы}{{\cyry}}1 {ь}{{\cyrsftsn}}1 {э}{{\cyre}}1 {ю}{{\cyryu}}1 {я}{{\cyrya}}1
+           {А}{{\CYRA}}1 {Б}{{\CYRB}}1 {В}{{\CYRV}}1 {Г}{{\CYRG}}1 {Д}{{\CYRD}}1 {Е}{{\CYRE}}1 {Ё}{{\"{\CYRE}}}1 {Ж}{{\CYRZH}}1 {З}{{\CYRZ}}1 {И}{{\CYRI}}1 {Й}{{\CYRJ}}1 {К}{{\CYRK}}1 {Л}{{\CYRL}}1 {М}{{\CYRM}}1 {Н}{{\CYRN}}1 {О}{{\CYRO}}1 {П}{{\CYRP}}1 {Р}{{\CYRR}}1 {С}{{\CYRS}}1 {Т}{{\CYRT}}1 {У}{{\CYRU}}1 {Ф}{{\CYRF}}1 {Х}{{\CYRH}}1 {Ц}{{\CYRC}}1 {Ч}{{\CYRCH}}1 {Ш}{{\CYRSH}}1 {Щ}{{\CYRSHCH}}1 {Ъ}{{\CYRHRDSN}}1 {Ы}{{\CYRY}}1 {Ь}{{\CYRSFTSN}}1 {Э}{{\CYRE}}1 {Ю}{{\CYRYU}}1 {Я}{{\CYRYA}}1
+}
+
+% --- Данные титульного листа ---
+\title[Мониторинг ВКР]{Разработка интеллектуального модуля интерактивного анализа данных в реляционных базах данных}
+\subtitle{Выпускная квалификационная работа}
+\author[Гимазетдинов Д.Р.]{Студент: Гимазетдинов Дмитрий Русланович}
+\institute[МАИ]{Московский авиационный институт\\ (Национальный исследовательский университет)}
+\date{\today}
+
+% --- Логотип (Если есть файл logo.png, раскомментируй строку ниже) ---
+\titlegraphic{\includegraphics[width=2cm]{./../materials/imgs/logo.png}}
+
+\begin{document}
+
+% 1. Титульный слайд
+\begin{frame}
+    \titlepage
+\end{frame}
+
+\begin{frame}{Содержание}
+    \tableofcontents % Генерирует список секций
+\end{frame}
+
+% 2. Цели и задачи
+\section{Цель и задачи работы}
+\begin{frame}{Цель и задачи работы}
+    \textbf{Цель:} Разработка интеллектуального чат-агента для работы с реляционными БД с целью автоматизации процессов формирования отчетности и визуализации данных на основе запросов на естественном языке.
+    
+    \vspace{0.5cm}
+    
+    \textbf{Задачи:}
+    \begin{itemize}
+        \item \textbf{Изучить} современные подходы и программные решения в области \texttt{Text-to-SQL} преобразований и выявить ограничения текущих методов взаимодействия с БД.
+        \item \textbf{Спроектировать} архитектуру интеллектуального модуля, включая механизмы обработки естественного языка, логику генерации \texttt{SQL}-кода и компоненты динамической визуализации.
+        \item \textbf{Разработать} алгоритмы извлечения контекста на основе технологии \texttt{RAG} для повышения точности формирования запросов к конкретной схеме базы данных.
+        \item \textbf{Реализовать} прототип системы с использованием стека технологий \texttt{Python (FastAPI/Streamlit)}, \texttt{PostgreSQL} и интеграцией \texttt{LLM}.
+        \item \textbf{Выполнить интеграцию} разработанных компонентов и провести отладку взаимодействия модуля с базой данных.
+        \item \textbf{Провести экспериментальную оценку} работоспособности системы, оценив точность генерации запросов и удобство представления аналитических данных. 
+    \end{itemize}
+\end{frame}
+
+
+\section{Актуальность}
+\begin{frame}{Актуальность: Рост объемов данных и барьер входа в аналитику}
+    В настоящий момент мы наблюдаем глобальный рост объемов данных, который, по прогнозам IDC, достигнет 175 зеттабайт. При этом, согласно рейтингу DB-Engines, основным стандартом хранения остаются реляционные базы данных.
+
+    Основная проблема: бизнес-пользователи не знают SQL. По данным Gartner, только четверть сотрудников способны самостоятельно извлекать данные. Это создает узкое горлышко в бизнес-процессах и перегружает разработчиков.
+\end{frame}
+
+\begin{frame}{Эволюция методов доступа к данным: от SQL к NLQ (Natural Language Query)}
+    Решением является внедрение интерфейсов на естественном языке. 
+    Если классические методы генерации SQL работали нестабильно, то современные Большие Языковые Модели показывают высокую точность на таких научных бенчмарках, как Spider и BIRD. 
+    
+    Используя технологии RAG, можно создать агента, который не просто переводит текст в код, но и понимает структуру базы данных.
+
+    \begin{block}{Цель}
+        Цель моей работы — создать систему, которая автоматизирует этот процесс и визуализирует результат.
+    \end{block}
+\end{frame}
+
+
+\section{Результаты работы на данный момент}
+\begin{frame}{Сравнение с конкурентами}
+    \begin{table}[h!]
+        \centering
+        \caption{Сравнительный анализ интеллектуальных модулей анализа данных}
+        \label{table:comparison}
+        \begin{tabular}{|p{4cm}|c|c|c|c|}
+        \hline
+        \textbf{Критерий} & \textbf{Metabase} & \textbf{LangChain} & \textbf{Vanna} & \textbf{Ваш подход} \\ \hline
+        Генерация SQL по тексту & + & + & + & + \\ \hline
+        Встроенная визуализация & + & - & $\pm$ & + \\ \hline
+        Локальное использование & - & + & + & + \\ \hline
+        Использование RAG & - & - & - & + \\ \hline
+        Механизм самокоррекции & - & - & - & + \\ \hline
+        Диалоговая память & - & $\pm$ & - & + \\ \hline
+        \end{tabular}
+    \end{table}
+\end{frame}
+
+\begin{frame}{На какой стадии диплом?}
+    \begin{enumerate}
+        \item Законченая черновая часть Теоретической части диплома
+        \item Налажен коннект с научным руководителем
+        \item Настроен макет диплома в Latex
+        \item Проведено знакомство с конкурентами и анализ рынка
+    \end{enumerate}
+\end{frame}
+
+\section{Дальнейшие шаги по работе}
+
+\begin{frame}{Дальнейшие шаги по работе}
+    До конца января, планируется
+    \begin{enumerate}
+        \item Описать диаграммы ML системы
+        \item Создать макет рабочей программы
+        \item Согласовать программу с научным руководителем
+        \item Добавить механизм RAG для текущей реализации
+    \end{enumerate}
+\end{frame}
+
+% % 3. Пример кода Python
+% \begin{frame}[fragile]{Реализация алгоритма}
+%     % Важно: для слайдов с кодом нужно добавлять опцию [fragile]
+%     Пример функции загрузки данных:
+    
+%     \begin{lstlisting}[caption={Функция предобработки}]
+% import numpy as np
+% import pandas as pd
+
+% def preprocess_data(file_path):
+%     """Загрузка и очистка данных"""
+%     df = pd.read_csv(file_path)
+%     df.fillna(0, inplace=True)
+%     return df
+%     \end{lstlisting}
+% \end{frame}
+
+% % 4. Слайд с картинкой и формулой
+% \begin{frame}{Результаты моделирования}
+%     \begin{columns}
+%         % Левая колонка (Текст и формула)
+%         \begin{column}{0.5\textwidth}
+%             Расчет производился по формуле:
+%             \begin{equation}
+%                 E = mc^2 + \int_{0}^{\infty} e^{-x} dx
+%             \end{equation}
+            
+%             Как видно на графике, сходимость достигается на 10-й итерации.
+%         \end{column}
+        
+%         % Правая колонка (Изображение)
+%         \begin{column}{0.5\textwidth}
+%             \begin{figure}
+%                 \centering
+%                 % Заглушка вместо картинки
+%                 \rule{5cm}{3.5cm} 
+%                 % \includegraphics[width=\textwidth]{graph.png}
+%                 \caption{График сходимости}
+%             \end{figure}
+%         \end{column}
+%     \end{columns}
+% \end{frame}
+
+% 5. Заключение
+\begin{frame}{Заключение}
+    \centering
+    \Large \textbf{Спасибо за внимание!}
+\end{frame}
+
+\end{document}
