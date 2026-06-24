@@ -1,0 +1,24 @@
+# AI
+openai
+langchain
+langgraph
+langchain-core
+langchain-gigachat
+langchain_openai
+
+
+# FAST API
+fastapi
+greenlet
+pydantic
+pydantic-settings
+SQLAlchemy
+uvicorn
+python-dotenv
+asyncpg
+
+
+# WEB
+ddgs
+httpx
+

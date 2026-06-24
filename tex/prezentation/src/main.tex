@@ -40,8 +40,9 @@
 % --- Пакеты ---
 \usepackage{graphicx}  % Картинки
 \usepackage{booktabs}  % Красивые таблицы
-\usepackage{caption}   % Настройка подписей
-\captionsetup[figure]{labelformat=simple, labelsep=endash, name=Рис.}
+\usepackage{tabularx}  % ← ДОБАВИТЬ — таблицы с X-колонками (слайд 4)
+\usepackage{amsmath}   % ← ДОБАВИТЬ — формулы (слайд 7)
+\usepackage{caption}   % Настройка подписейep=endash, name=Рис.}
 \captionsetup[table]{labelformat=simple, labelsep=endash, name=Табл.}
 
 % --- Оформление кода (Python) ---
@@ -81,152 +82,417 @@
            {А}{{\CYRA}}1 {Б}{{\CYRB}}1 {В}{{\CYRV}}1 {Г}{{\CYRG}}1 {Д}{{\CYRD}}1 {Е}{{\CYRE}}1 {Ё}{{\"{\CYRE}}}1 {Ж}{{\CYRZH}}1 {З}{{\CYRZ}}1 {И}{{\CYRI}}1 {Й}{{\CYRJ}}1 {К}{{\CYRK}}1 {Л}{{\CYRL}}1 {М}{{\CYRM}}1 {Н}{{\CYRN}}1 {О}{{\CYRO}}1 {П}{{\CYRP}}1 {Р}{{\CYRR}}1 {С}{{\CYRS}}1 {Т}{{\CYRT}}1 {У}{{\CYRU}}1 {Ф}{{\CYRF}}1 {Х}{{\CYRH}}1 {Ц}{{\CYRC}}1 {Ч}{{\CYRCH}}1 {Ш}{{\CYRSH}}1 {Щ}{{\CYRSHCH}}1 {Ъ}{{\CYRHRDSN}}1 {Ы}{{\CYRY}}1 {Ь}{{\CYRSFTSN}}1 {Э}{{\CYRE}}1 {Ю}{{\CYRYU}}1 {Я}{{\CYRYA}}1
 }
 
+
+% ─────────────────────────────────────────────
 % --- Данные титульного листа ---
-\title[Мониторинг ВКР]{Разработка интеллектуального модуля интерактивного анализа данных в реляционных базах данных}
+\title[ВКР]{Разработка интеллектуального модуля интерактивного анализа данных в реляционных базах данных}
 \subtitle{Выпускная квалификационная работа}
 \author[Гимазетдинов Д.Р.]{Студент: Гимазетдинов Дмитрий Русланович}
 \institute[МАИ]{Московский авиационный институт\\ (Национальный исследовательский университет)}
-\date{\today}
-
-% --- Логотип (Если есть файл logo.png, раскомментируй строку ниже) ---
-\titlegraphic{\includegraphics[width=2cm]{./../materials/imgs/logo.png}}
+\date{2026}
+% ─────────────────────────────────────────────
 
 \begin{document}
 
-% 1. Титульный слайд
+% ══════════════════════════════════════════════
+% 1. Титульный лист
+% ══════════════════════════════════════════════
 \begin{frame}
-    \titlepage
+  \titlepage
 \end{frame}
 
-\begin{frame}{Содержание}
-    \tableofcontents % Генерирует список секций
+% ══════════════════════════════════════════════
+% 2. Актуальность темы
+% ══════════════════════════════════════════════
+\begin{frame}{Актуальность темы}
+  \begin{columns}[T]
+    \begin{column}{0.55\textwidth}
+      \textbf{Проблема:}
+      \begin{itemize}
+        \item Бизнес-цели требуют быстрого отклика от аналитиков
+        \item Аналитики вынуждены ждать разработчиков для получения отчётов
+        \item Прослойка между аналитиком и данными становится рудиментом
+      \end{itemize}
+      \vspace{6pt}
+      \textbf{Пример:}\\
+      {\small«Какие самолёты чаще всего летали из Москвы в Санкт-Петербург в прошлом месяце с загрузкой более 80\%?» — требует нескольких JOIN и знания схемы}
+    \end{column}
+    \begin{column}{0.42\textwidth}
+      \textbf{Факторы актуальности:}
+      \begin{enumerate}
+        \item Экспоненциальный рост объёмов данных
+        \item Высокий порог входа в аналитику (SQL)
+        \item Активное развитие LLM-моделей
+        \item Ограничения существующих решений
+      \end{enumerate}
+      \vspace{6pt}
+      \textbf{Решение:} NLIDB-интерфейс на основе RAG + LLM + агентный подход + режим самокоррекции
+    \end{column}
+  \end{columns}
 \end{frame}
 
-% 2. Цели и задачи
-\section{Цель и задачи работы}
-\begin{frame}{Цель и задачи работы}
-    \textbf{Цель:} Разработка интеллектуального чат-агента для работы с реляционными БД с целью автоматизации процессов формирования отчетности и визуализации данных на основе запросов на естественном языке.
-    
-    \vspace{0.5cm}
-    
-    \textbf{Задачи:}
-    \begin{itemize}
-        \item \textbf{Изучить} современные подходы и программные решения в области \texttt{Text-to-SQL} преобразований и выявить ограничения текущих методов взаимодействия с БД.
-        \item \textbf{Спроектировать} архитектуру интеллектуального модуля, включая механизмы обработки естественного языка, логику генерации \texttt{SQL}-кода и компоненты динамической визуализации.
-        \item \textbf{Разработать} алгоритмы извлечения контекста на основе технологии \texttt{RAG} для повышения точности формирования запросов к конкретной схеме базы данных.
-        \item \textbf{Реализовать} прототип системы с использованием стека технологий \texttt{Python (FastAPI/Streamlit)}, \texttt{PostgreSQL} и интеграцией \texttt{LLM}.
-        \item \textbf{Выполнить интеграцию} разработанных компонентов и провести отладку взаимодействия модуля с базой данных.
-        \item \textbf{Провести экспериментальную оценку} работоспособности системы, оценив точность генерации запросов и удобство представления аналитических данных. 
-    \end{itemize}
+% ══════════════════════════════════════════════
+% 3. Цель и задачи
+% ══════════════════════════════════════════════
+\begin{frame}{Цель и задачи исследования}
+  \textbf{Цель:}\\[4pt]
+  Разработать программное решение, которое устранит барьер между пользователями без технического образования и сложными реляционными базами данных.
+
+  \vspace{8pt}
+  \textbf{Задачи:}
+  \begin{enumerate}
+    \item Провести оценку современных методов трансляции естественного языка в SQL
+    \item Спроектировать RAG-архитектуру для работы со схемой БД (метаинформация, связи таблиц)
+    \item Разработать механизм самокоррекции ИИ-агента (Self-Heal)
+    \item Провести оценку качества генерации до и после самокоррекции
+    \item Сравнить LLM-провайдеры: \texttt{GLM-4.7}, \texttt{Qwen3-Coder-Next}, \texttt{GigaChat-2}
+    \item Реализовать микросервисную архитектуру системы
+  \end{enumerate}
 \end{frame}
 
-
-\section{Актуальность}
-\begin{frame}{Актуальность: Рост объемов данных и барьер входа в аналитику}
-    В настоящий момент мы наблюдаем глобальный рост объемов данных, который, по прогнозам IDC, достигнет 175 зеттабайт. При этом, согласно рейтингу DB-Engines, основным стандартом хранения остаются реляционные базы данных.
-
-    Основная проблема: бизнес-пользователи не знают SQL. По данным Gartner, только четверть сотрудников способны самостоятельно извлекать данные. Это создает узкое горлышко в бизнес-процессах и перегружает разработчиков.
-\end{frame}
-
-\begin{frame}{Эволюция методов доступа к данным: от SQL к NLQ (Natural Language Query)}
-    Решением является внедрение интерфейсов на естественном языке. 
-    Если классические методы генерации SQL работали нестабильно, то современные Большие Языковые Модели показывают высокую точность на таких научных бенчмарках, как Spider и BIRD. 
-    
-    Используя технологии RAG, можно создать агента, который не просто переводит текст в код, но и понимает структуру базы данных.
-
-    \begin{block}{Цель}
-        Цель моей работы — создать систему, которая автоматизирует этот процесс и визуализирует результат.
-    \end{block}
-\end{frame}
-
-
-\section{Результаты работы на данный момент}
-\begin{frame}{Сравнение с конкурентами}
-    \begin{table}[h!]
-        \centering
-        \caption{Сравнительный анализ интеллектуальных модулей анализа данных}
-        \label{table:comparison}
-        \begin{tabular}{|p{4cm}|c|c|c|c|}
-        \hline
-        \textbf{Критерий} & \textbf{Metabase} & \textbf{LangChain} & \textbf{Vanna} & \textbf{Ваш подход} \\ \hline
-        Генерация SQL по тексту & + & + & + & + \\ \hline
-        Встроенная визуализация & + & - & $\pm$ & + \\ \hline
-        Локальное использование & - & + & + & + \\ \hline
-        Использование RAG & - & - & - & + \\ \hline
-        Механизм самокоррекции & - & - & - & + \\ \hline
-        Диалоговая память & - & $\pm$ & - & + \\ \hline
-        \end{tabular}
-    \end{table}
-\end{frame}
-
-\begin{frame}{На какой стадии диплом?}
-    \begin{enumerate}
-        \item Законченая черновая часть Теоретической части диплома
-        \item Налажен коннект с научным руководителем
-        \item Настроен макет диплома в Latex
-        \item Проведено знакомство с конкурентами и анализ рынка
-    \end{enumerate}
-\end{frame}
-
-\section{Дальнейшие шаги по работе}
-
-\begin{frame}{Дальнейшие шаги по работе}
-    До конца января, планируется
-    \begin{enumerate}
-        \item Описать диаграммы ML системы
-        \item Создать макет рабочей программы
-        \item Согласовать программу с научным руководителем
-        \item Добавить механизм RAG для текущей реализации
-    \end{enumerate}
-\end{frame}
-
-% % 3. Пример кода Python
-% \begin{frame}[fragile]{Реализация алгоритма}
-%     % Важно: для слайдов с кодом нужно добавлять опцию [fragile]
-%     Пример функции загрузки данных:
-    
-%     \begin{lstlisting}[caption={Функция предобработки}]
-% import numpy as np
-% import pandas as pd
-
-% def preprocess_data(file_path):
-%     """Загрузка и очистка данных"""
-%     df = pd.read_csv(file_path)
-%     df.fillna(0, inplace=True)
-%     return df
-%     \end{lstlisting}
-% \end{frame}
-
-% % 4. Слайд с картинкой и формулой
-% \begin{frame}{Результаты моделирования}
-%     \begin{columns}
-%         % Левая колонка (Текст и формула)
-%         \begin{column}{0.5\textwidth}
-%             Расчет производился по формуле:
-%             \begin{equation}
-%                 E = mc^2 + \int_{0}^{\infty} e^{-x} dx
-%             \end{equation}
-            
-%             Как видно на графике, сходимость достигается на 10-й итерации.
-%         \end{column}
-        
-%         % Правая колонка (Изображение)
-%         \begin{column}{0.5\textwidth}
-%             \begin{figure}
-%                 \centering
-%                 % Заглушка вместо картинки
-%                 \rule{5cm}{3.5cm} 
-%                 % \includegraphics[width=\textwidth]{graph.png}
-%                 \caption{График сходимости}
-%             \end{figure}
-%         \end{column}
-%     \end{columns}
-% \end{frame}
-
-% 5. Заключение
-\begin{frame}{Заключение}
+% ══════════════════════════════════════════════
+% 4. Сравнение существующих решений
+% ══════════════════════════════════════════════
+\begin{frame}{Сравнение с существующими решениями}
+  \begin{table}
     \centering
-    \Large \textbf{Спасибо за внимание!}
+    \small
+    \begin{tabularx}{\textwidth}{|>{\raggedright\arraybackslash}X|c|c|c|c|}
+      \hline
+      \textbf{Функционал} & \textbf{Vanna.AI} & \textbf{LangChain} & \textbf{Metabase} & \textbf{Наш продукт} \\
+      \hline
+      Генерация SQL (Text-to-SQL)      & + & + & + & \textbf{+} \\
+      \hline
+      RAG для схемы БД                 & + & Ограничено & -- & \textbf{+} \\
+      \hline
+      Локальный запуск (Privacy)       & + & + & -- & \textbf{+} \\
+      \hline
+      Механизм самокоррекции (Self-Heal) & -- & -- & -- & \textbf{+} \\
+      \hline
+      Авто-визуализация данных         & $\pm$ & -- & + & В разработке \\
+      \hline
+    \end{tabularx}
+  \end{table}
+
+  \vspace{6pt}
+  \begin{block}{Ключевые преимущества нашего решения}
+    \begin{itemize}
+      \item \textbf{Приватность:} можно все вычисления вести локально, данные не покидают контур
+      \item \textbf{Self-Heal:} автоматическая итеративная самокоррекция SQL
+      \item \textbf{RAG для сложных схем:} оптимизировано для многотабличных БД
+    \end{itemize}
+  \end{block}
+\end{frame}
+
+% ══════════════════════════════════════════════
+% 5.2 Архитектура системы
+% ══════════════════════════════════════════════
+\begin{frame}{Архитектура системы}
+  \begin{columns}[T]
+    \begin{column}{0.48\textwidth}
+      \textbf{Микросервисы:}
+      \begin{itemize}
+        \item \textbf{Frontend} — веб-интерфейс пользователя
+        \item \textbf{RAG Service} — оркестратор пайплайна
+        \item \textbf{Agent Module} — LangGraph агент (Chain-of-Thought)
+        \item \textbf{Embedding Model Service} — локальная векторизация (\texttt{multilingual-e5-base})
+        \item \textbf{Retrieval Pipeline} — семантический поиск в ChromaDB
+        \item \textbf{Ingest Pipeline} — индексация документов (Redis Queue)
+        \item \textbf{DB Connector Service} — безопасный доступ к PostgreSQL
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.48\textwidth}
+      \textbf{Хранилища:}
+      \begin{itemize}
+        \item \textbf{MinIO} — объектное хранилище файлов (S3-совместимо)
+        \item \textbf{ChromaDB} — векторная БД
+        \item \textbf{PostgreSQL} — реляционная БД
+        \item \textbf{Redis} — очередь задач
+      \end{itemize}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+% ══════════════════════════════════════════════
+% 5.2. Архитектура системы
+% ══════════════════════════════════════════════
+\begin{frame}{Архитектура системы}
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.65\textwidth]{/Users/cube/Documents/Development/Наработки по дипломной работе/Диплом/tex/prezentation/materials/HLD.drawio.png}
+        \caption{HLD диаграмма архитектуры системы}
+        \label{hld}
+    \end{figure}
+
+\end{frame}
+
+% ══════════════════════════════════════════════
+% 5.3. Архитектура системы
+% ══════════════════════════════════════════════
+\begin{frame}{Архитектура системы}
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.7\textwidth]{/Users/cube/Documents/Development/Наработки по дипломной работе/Диплом/tex/prezentation/materials/rag_pipeline.drawio.png}
+        \caption{RAG-пайплайн}
+        \label{rag}
+    \end{figure}
+
+\end{frame}
+
+% ══════════════════════════════════════════════
+% 6.1 Механизм самокоррекции
+% ══════════════════════════════════════════════
+\begin{frame}{Механизм самокоррекции}
+  \begin{columns}[T]
+    \begin{column}{0.44\textwidth}
+      \textbf{Агентный цикл (LangGraph):}
+      \begin{enumerate}
+        \item Переписывание запроса для RAG-поиска
+        \item Семантический поиск контекста схемы БД
+        \item Генерация SQL на основе контекста
+        \item Выполнение SQL в DB Connector Service
+        \item \textbf{Критика результата} — LLM анализирует ошибку и выносит вердикт
+        \item Если нужно: запрос схемы проблемных таблиц
+        \item Улучшение SQL с учётом замечаний
+        \item Повтор до 5 итераций
+      \end{enumerate}
+    \end{column}
+    \begin{column}{0.55\textwidth}
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=0.55\textwidth]{/Users/cube/Documents/Development/Наработки по дипломной работе/Диплом/tex/prezentation/materials/self_correction.png}
+            \caption{Алгоритм самокоррекции}
+            \label{self_correction}
+        \end{figure}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+% ══════════════════════════════════════════════
+% 7. Метрики сравнения LLM
+% ══════════════════════════════════════════════
+\begin{frame}{Метрики оценки качества генерации SQL}
+  \begin{columns}[T]
+    \begin{column}{0.48\textwidth}
+      \textbf{Execution Accuracy (EA):}
+      \[
+        \text{EA} = \frac{|\{q : \text{exec}(q) = \text{exec}(q^*)\}|}{|Q|}
+      \]
+      Доля запросов, результат выполнения которых совпал с эталоном. Совпадение результирующих множеств.
+
+      \vspace{8pt}
+      \textbf{Exact Matching (EM):}
+      \[
+        \text{EM} = \frac{|\{q : q = q^*\}|}{|Q|}
+      \]
+      Точное совпадение SQL текста.
+    \end{column}
+    \begin{column}{0.48\textwidth}
+      \textbf{Exact Set Matching (ESM):}
+      \[
+        \text{ESM} = \frac{|\{q : R(q) \equiv R(q^*)\}|}{|Q|}
+      \]
+      Cравнивает структурные компоненты SQL-запроса (например, списки столбцов, условия фильтрации, ...)
+
+      \vspace{8pt}
+      \textbf{Intellect (IEA):}
+      \[
+        \text{IEA} = \frac{|\{q : \text{exec}(q) \approx \text{exec}(q^*)\}|}{|Q|}
+      \]
+      Учитывает семантически верные, но синтаксически отличающиеся запросы.
+
+      \vspace{4pt}
+      {\small Тестовый набор: \textbf{31 SQL-задача} разного уровня сложности на БД «Авиаперевозки»}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+% ══════════════════════════════════════════════
+% 8.1 Графики метрик
+% ══════════════════════════════════════════════
+\begin{frame}{Результаты сравнения LLM-моделей}
+    \begin{minipage}{0.49\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{/Users/cube/Documents/Development/Наработки по дипломной работе/Диплом/tex/prezentation/materials/llm_before.png}
+        % \captionof{figure}{До самокоррекции}
+    \end{minipage}\hfill
+    \begin{minipage}{0.49\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{/Users/cube/Documents/Development/Наработки по дипломной работе/Диплом/tex/prezentation/materials/llm_after.png}
+        % \captionof{figure}{После самокоррекции}
+    \end{minipage}
+\end{frame}
+
+% ══════════════════════════════════════════════
+% 8.2 Графики метрик
+% ══════════════════════════════════════════════
+\begin{frame}{Результаты сравнения LLM-моделей}
+  \begin{columns}[T]
+    \begin{column}{0.48\textwidth}
+      \centering
+      \textbf{Без самокоррекции}
+      \begin{table}
+        \small
+        \begin{tabular}{|l|c|c|c|c|}
+          \hline
+          \textbf{Модель} & \textbf{EA} & \textbf{EM} & \textbf{ESM} & \textbf{IEA} \\
+          \hline
+          GLM-4.7      & \textbf{54,8} & \textbf{25,8} & \textbf{35,5} & \textbf{64,5} \\
+          Qwen3-Coder  & 45,2 & 19,4 & 29,0 & 54,8 \\
+          GigaChat-2   & 16,1 &  6,5 &  9,7 & 22,6 \\
+          \hline
+        \end{tabular}
+      \end{table}
+    \end{column}
+    \begin{column}{0.48\textwidth}
+      \centering
+      \textbf{С самокоррекцией}
+      \begin{table}
+        \small
+        \begin{tabular}{|l|c|c|c|c|}
+          \hline
+          \textbf{Модель} & \textbf{EA} & \textbf{EM} & \textbf{ESM} & \textbf{IEA} \\
+          \hline
+          GLM-4.7      & \textbf{67,7} & \textbf{38,7} & \textbf{48,4} & \textbf{77,4} \\
+          Qwen3-Coder  & 61,3 & 32,3 & 41,9 & 71,0 \\
+          GigaChat-2   & 29,0 & 12,9 & 22,6 & 38,7 \\
+          \hline
+        \end{tabular}
+      \end{table}
+    \end{column}
+  \end{columns}
+
+  \vspace{6pt}
+  \begin{block}{Прирост EA от самокоррекции}
+    \centering
+    \begin{tabular}{lccc}
+      \toprule
+      & GLM-4.7 & Qwen3-Coder & GigaChat-2 \\
+      \midrule
+      $\Delta$ EA & \textbf{+13,0 п.п.} & +16,1 п.п. & +12,9 п.п. \\
+      \bottomrule
+    \end{tabular}
+  \end{block}
+
+  {\small \textbf{Вывод:} GLM-4.7 лидирует по всем метрикам в обоих режимах. Qwen демонстрирует наибольший относительный прирост от самокоррекции. GigaChat-2 существенно уступает.}
+\end{frame}
+
+% ══════════════════════════════════════════════
+% 9. Результаты и внедрение
+% ══════════════════════════════════════════════
+\begin{frame}{Результаты и внедрение}
+  \begin{columns}[T]
+    \begin{column}{0.48\textwidth}
+      \textbf{Технические характеристики:}
+      \begin{itemize}
+        \item Векторизация запроса: \textbf{80–150 мс}
+        \item Семантический поиск (10K чанков): \textbf{50–100 мс}
+        \item Полный агентный цикл (1–3 итерации): \textbf{15–45 сек}
+        \item Индексация документа (10 стр.): \textbf{20–40 сек}
+      \end{itemize}
+
+      \vspace{6pt}
+      \textbf{Развёртывание:}
+      \begin{itemize}
+        \item Одна команда: \texttt{docker compose up -d}
+        \item Веб-интерфейс: \texttt{localhost:3000}
+        \item API: \texttt{localhost:8003}
+        \item Поддерживаемые форматы: PDF, DOCX, TXT
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.48\textwidth}
+      \textbf{Область применения:}
+      \begin{itemize}
+        \item Розничная торговля и логистика
+        \item Финансовый сектор
+        \item Производство и телеком
+        \item Авиаперевозки
+        \item Банковские хранилища
+      \end{itemize}
+
+      \vspace{6pt}
+      \textbf{Апробация:}\\
+      Тестирование на демонстрационной БД «Авиаперевозки» (Postgres Pro):
+      \begin{itemize}
+        \item 8 взаимосвязанных таблиц
+        \item JSONB-поля с мультиязычными атрибутами
+        \item 31 SQL-задача разного уровня сложности
+      \end{itemize}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+% ══════════════════════════════════════════════
+% 10. Практическая значимость
+% ══════════════════════════════════════════════
+\begin{frame}{Практическая значимость}
+  \begin{columns}[T]
+    \begin{column}{0.48\textwidth}
+      \textbf{Научная новизна:}
+      \begin{itemize}
+        \item Адаптивный метод семантического поиска контекста схемы БД с многоуровневым индексированием (структура + комментарии + примеры данных)
+        \item Оригинальный алгоритм многошаговой самокоррекции SQL («критик» + «исполнитель»)
+      \end{itemize}
+
+      \vspace{6pt}
+      \textbf{Конфиденциальность данных:}
+      \begin{itemize}
+        \item Все вычисления могут исполняться локально, внутри корпоративного контура
+        \item Модели эмбеддингов запускаются на собственном сервере
+        \item Данные не передаются во внешние облачные сервисы
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.48\textwidth}
+      \textbf{Масштабируемость:}
+      \begin{itemize}
+        \item Горизонтальное масштабирование каждого сервиса независимо
+        \item ChromaDB: от десятков тысяч до миллионов векторов
+        \item Замена LLM или модели эмбеддингов без переработки системы
+      \end{itemize}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+% ══════════════════════════════════════════════
+% 11. Пример работы системы (заглушка)
+% ══════════════════════════════════════════════
+\begin{frame}{Пример работы системы}
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.66\textwidth]{/Users/cube/Documents/Development/Наработки по дипломной работе/Диплом/tex/prezentation/materials/preview.png}
+        \caption{UI}
+        \label{ui}
+    \end{figure}
+
+\end{frame}
+
+% ══════════════════════════════════════════════
+% 12. Ссылка на GitHub (заглушка)
+% ══════════════════════════════════════════════
+\begin{frame}{Исходный код проекта}
+    \begin{columns}[T]
+        \begin{column}{0.48\textwidth}
+            \begin{figure}[H]
+                \centering
+                \includegraphics[width=0.7\textwidth]{/Users/cube/Documents/Development/Наработки по дипломной работе/Диплом/tex/prezentation/materials/QR-for-C4be.png}
+                \caption{GitHub}
+                \label{qr1}
+            \end{figure}
+        \end{column}
+        \begin{column}{0.48\textwidth}
+            \begin{figure}[H]
+                \centering
+                \includegraphics[width=0.7\textwidth]{/Users/cube/Documents/Development/Наработки по дипломной работе/Диплом/tex/prezentation/materials/gitverse.png}
+                \caption{GitVerse}
+                \label{qr1}
+            \end{figure}
+        \end{column}
+  \end{columns}
+   
+
 \end{frame}
 
 \end{document}

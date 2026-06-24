@@ -1,0 +1,24 @@
+# FastAPI
+fastapi
+pydantic
+uvicorn
+python-multipart
+greenlet
+
+
+# S3
+aioboto3
+aiofiles
+
+
+# Postgres
+sqlalchemy
+asyncpg
+
+
+# Config
+pydantic_settings
+
+
+# web
+httpx

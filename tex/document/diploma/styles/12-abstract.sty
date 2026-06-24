@@ -39,15 +39,16 @@
 \def\abstractLine{\MakeTitlecase{\workName} состоит из}
 
 \renewcommand{\abstract}{
-    \structure*{РЕФЕРАТ} % реферат не должен быть в содержании
+    \structure{РЕФЕРАТ}
 
     \abstractLine\ \formatbycnt{\the\numexpr(\getrefbykeydefault{LastPage}{page}{0})\relax}{страницы}{страниц}%
     \ifnum \TotalValue{totalfigures}>0, \formatbycnt{\TotalValue{totalfigures}}{рисунка}{рисунков}\fi
     \ifnum \TotalValue{totaltables}>0, \formatbycnt{\TotalValue{totaltables}}{таблицы}{таблиц}\fi
     \ifnum \TotalValue{totalcites}>0, \formatbycnt{\TotalValue{totalcites}}{использованного источника}{использованных источников}\fi
     \ifnum \TotalValue{totalappendices}>0, \formatbycnt{\TotalValue{totalappendices}}{приложения}{приложений}\fi.
+    \par
 }
 
 \newcommand\keywords[1]{
-    \noindent {#1}
+    \par\noindent{\MakeUppercase{#1}}\par
 }

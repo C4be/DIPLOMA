@@ -1,0 +1,18 @@
+# REST
+fastapi
+pydantic
+uvicorn
+
+# ML
+langchain
+langchain_community
+langchain_text_splitters
+
+# Secrets
+pydantic_settings
+
+# Web
+httpx
+
+# Vector storage
+chromadb

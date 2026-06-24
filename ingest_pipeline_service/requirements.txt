@@ -1,0 +1,37 @@
+# Rest
+fastapi
+pydantic
+uvicorn
+
+
+# Redis/RQ
+redis
+rq
+
+
+# ML
+langchain
+langchain_community
+langchain_text_splitters
+
+
+# Secrets
+pydantic_settings
+
+
+# Web
+httpx
+
+
+# Vector storage
+chromadb
+
+
+# S3
+aioboto3
+aiofiles
+
+
+# utils
+pypdf
+pymupdf

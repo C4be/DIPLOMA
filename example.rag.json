@@ -1,0 +1,101 @@
+{
+    "response": [
+        {
+            "content": "ществом такой записи является возможность записывать аргументы в любом порядке, например:\nSELECT concat_lower_or_upper(a => "Hello", b => "World", uppercase => true);\n concat_lower_or_upper \n-----------------------\n HELLO WORLD\n(1 row)\n45",
+            "metadata": {
+                "keywords": "",
+                "trapped": "",
+                "file_path": ".tmp/full_doc_ru.pdf",
+                "page": 74,
+                "creationdate": "2025-12-02T18: 23: 18+03: 00",
+                "author": "Общество с ограниченной ответственностью «Постгрес Профессиональный»",
+                "moddate": "",
+                "producer": "Apache FOP Version 2.8",
+                "format": "PDF 1.4",
+                "source": ".tmp/full_doc_ru.pdf",
+                "total_pages": 3313,
+                "subject": "",
+                "title": "Документация к Postgres Pro Standard 15.15.1",
+                "creator": "DocBook XSL Stylesheets with Apache FOP",
+                "creationDate": "D:20251202182318+03\"00\"",
+                "modDate": ""
+            },
+            "distance": 0.2139951
+        },
+        {
+            "content": "ществом такой записи является возможность записывать аргументы в любом порядке, например:\nSELECT concat_lower_or_upper(a => "Hello", b => "World", uppercase => true);\n concat_lower_or_upper \n-----------------------\n HELLO WORLD\n(1 row)\n45",
+            "metadata": {
+                "creationDate": "",
+                "modDate": "D: 20260206064631Z",
+                "total_pages": 484,
+                "moddate": "2026-02-06T06: 46: 31+00: 00",
+                "subject": "",
+                "creationdate": "",
+                "title": "",
+                "creator": "",
+                "producer": "Pdftools SDK",
+                "page": 22,
+                "source": ".tmp/синтаксис SQL.pdf",
+                "file_path": ".tmp/синтаксис SQL.pdf",
+                "format": "PDF 1.4",
+                "keywords": "",
+                "author": "",
+                "trapped": ""
+            },
+            "distance": 0.2139951
+        },
+        {
+            "content": "ществом такой записи является возможность записывать аргументы в любом порядке, например:\nSELECT concat_lower_or_upper(a => \"Hello\", b => \"World\", uppercase => true);\n concat_lower_or_upper \n-----------------------\n HELLO WORLD\n(1 row)\n45",
+            "metadata": {
+                "source": ".tmp/синтаксис SQL.pdf",
+                "producer": "Pdftools SDK",
+                "title": "",
+                "file_path": ".tmp/синтаксис SQL.pdf",
+                "creationdate": "",
+                "subject": "",
+                "page": 22,
+                "total_pages": 484,
+                "modDate": "D: 20260206064631Z",
+                "format": "PDF 1.4",
+                "author": "",
+                "moddate": "2026-02-06T06: 46: 31+00: 00",
+                "keywords": "",
+                "trapped": "",
+                "creationDate": "",
+                "creator": ""
+            },
+            "distance": 0.2139951
+        },
+        {
+            "content": "получаемым по правилам функции string в XPath 1.0.\n293",
+            "metadata": {
+                "format": "PDF 1.4",
+                "creationDate": "",
+                "producer": "Pdftools SDK",
+                "page": 270,
+                "creator": "",
+                "author": "",
+                "title": "",
+                "total_pages": 484,
+                "source": ".tmp/синтаксис SQL.pdf",
+                "file_path": ".tmp/синтаксис SQL.pdf",
+                "trapped": "",
+                "creationdate": "",
+                "keywords": "",
+                "modDate": "D: 20260206064631Z",
+                "moddate": "2026-02-06T06: 46: 31+00: 00",
+                "subject": ""
+            },
+            "distance": 0.22029805
+        },
+        {
+            "content": "| Имя             | Тип   | Small | Medium | Big    | Описание             |\n| --------------- | ----- | ----- | ------ | ------ | -------------------- |\n| aircrafts       | view  |       |        |        | Самолёты             |\n| aircrafts_data  | table | 16 kB | 16 kB  | 16 kB  | Самолёты (переводы)  |\n| airports        | view  |       |        |        | Аэропорты            |\n| airports_data   | table | 56 kB | 56 kB  | 56 kB  | Аэропорты (переводы) |\n| boarding_passes | table | 31 MB | 102 MB | 427 MB | Посадочные талоны    |\n| bookings        | table | 13 MB | 30 MB  | 105 MB | Бронирования         |\n| flights         | table | 3 MB  | 6 MB   | 19 MB  | Рейсы                |\n| flights_v       | view  |       |        |        | Рейсы                |\n| routes          | view  |       |        |        | Маршруты             |\n| seats           | table | 88 kB | 88 kB  | 88 kB  | Места                |",
+            "metadata": {
+                "ext": "txt",
+                "filename": "Информация про базу с сайта.txt",
+                "file_id": 24
+            },
+            "distance": 0.22087806
+        }
+    ]
+}

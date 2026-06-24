@@ -1,0 +1,9 @@
+gradio
+sqlalchemy
+bcrypt==4.0.1
+passlib
+psycopg2-binary
+pydantic-settings
+ruff
+
+httpx

@@ -66,6 +66,418 @@
       \verb https://python.langchain.com
       \endverb
     \endentry
+    \entry{li2025alphasql}{article}{useauthor=false}{}
+      \name{author}{7}{}{%
+        {{hash=84f716033eb74ed651070bfa5d477905}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Boyan},
+           giveni={B\bibinitperiod}}}%
+        {{hash=754769aea83eb44a600ee15c6f9419f6}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Jiayi},
+           giveni={J\bibinitperiod}}}%
+        {{hash=c77e6eb01cbd086e448df459fe4240bd}{%
+           family={Fan},
+           familyi={F\bibinitperiod},
+           given={Ju},
+           giveni={J\bibinitperiod}}}%
+        {{hash=035ca4e54ab6a8e1656be02eed7975ee}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Yanwei},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=ea1fab8979cc9aaa8f8ac5e6b5fb3e05}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Chong},
+           giveni={C\bibinitperiod}}}%
+        {{hash=104b2048b225c23c31992c9c031764d4}{%
+           family={Tang},
+           familyi={T\bibinitperiod},
+           given={Nan},
+           giveni={N\bibinitperiod}}}%
+        {{hash=b4e57b22322af303a91f787661a2598d}{%
+           family={Luo},
+           familyi={L\bibinitperiod},
+           given={Yuyu},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{authorbibnamehash}{c952da66af203eb2bf67fcf38b1b3d8d}
+      \strng{authornamehash}{c952da66af203eb2bf67fcf38b1b3d8d}
+      \strng{authorfullhash}{f9dcbb7d1bc0002191ef78e8895cadb5}
+      \strng{authorfullhashraw}{f9dcbb7d1bc0002191ef78e8895cadb5}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the 42nd International Conference on Machine Learning (ICML)}
+      \field{title}{Alpha-SQL: Zero-Shot Text-to-SQL using Monte Carlo Tree Search}
+      \field{year}{2025}
+      \true{nocite}
+    \endentry
+    \entry{mao2025steinersql}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=8b5474b6afa7f2525a151b3a937a919d}{%
+           family={Mao},
+           familyi={M\bibinitperiod},
+           given={Xutao},
+           giveni={X\bibinitperiod}}}%
+        {{hash=b9ea953e38962ea62150af4914b3a85b}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Tao},
+           giveni={T\bibinitperiod}}}%
+        {{hash=105c7076c02771702afbe94578a0181d}{%
+           family={Zan},
+           familyi={Z\bibinitperiod},
+           given={Hongying},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{1b9e9d29ad5c682150e71b01413a4e00}
+      \strng{fullhash}{1b9e9d29ad5c682150e71b01413a4e00}
+      \strng{fullhashraw}{1b9e9d29ad5c682150e71b01413a4e00}
+      \strng{bibnamehash}{1b9e9d29ad5c682150e71b01413a4e00}
+      \strng{authorbibnamehash}{1b9e9d29ad5c682150e71b01413a4e00}
+      \strng{authornamehash}{1b9e9d29ad5c682150e71b01413a4e00}
+      \strng{authorfullhash}{1b9e9d29ad5c682150e71b01413a4e00}
+      \strng{authorfullhashraw}{1b9e9d29ad5c682150e71b01413a4e00}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:2509.19623}
+      \field{title}{SteinerSQL: Graph-Guided Mathematical Reasoning for Text-to-SQL Generation}
+      \field{year}{2025}
+      \true{nocite}
+    \endentry
+    \entry{xie2025opensearch}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=2f04bba9c16e4b5fc283472e0cfa927f}{%
+           family={Xie},
+           familyi={X\bibinitperiod},
+           given={Xiangjin},
+           giveni={X\bibinitperiod}}}%
+        {{hash=3e7b156f64d05fff978f6ea28a3256d0}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Lingyan\bibnamedelima Zhao},
+           giveni={L\bibinitperiod\bibinitdelim Z\bibinitperiod},
+           suffix={Guangwei\bibnamedelima personalities},
+           suffixi={G\bibinitperiod\bibinitdelim p\bibinitperiod}}}%
+        {{hash=6d4d083f1d685df4abdf9cba90fb5bdc}{%
+           family={Guo},
+           familyi={G\bibinitperiod},
+           given={Ruijie},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{1a19aea6992daaba5bf955a0c3e09188}
+      \strng{fullhash}{1a19aea6992daaba5bf955a0c3e09188}
+      \strng{fullhashraw}{1a19aea6992daaba5bf955a0c3e09188}
+      \strng{bibnamehash}{1a19aea6992daaba5bf955a0c3e09188}
+      \strng{authorbibnamehash}{1a19aea6992daaba5bf955a0c3e09188}
+      \strng{authornamehash}{1a19aea6992daaba5bf955a0c3e09188}
+      \strng{authorfullhash}{1a19aea6992daaba5bf955a0c3e09188}
+      \strng{authorfullhashraw}{1a19aea6992daaba5bf955a0c3e09188}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:2502.14913}
+      \field{title}{OpenSearch-SQL: Enhancing Text-to-SQL with Dynamic Few-shot and Consistency Alignment}
+      \field{year}{2025}
+      \true{nocite}
+    \endentry
+    \entry{papicchio2026think2sql}{article}{useauthor=false}{}
+      \name{author}{4}{}{%
+        {{hash=3a7d8cf4bbe65a8a8ed52805fff42b1f}{%
+           family={Papicchio},
+           familyi={P\bibinitperiod},
+           given={Simone},
+           giveni={S\bibinitperiod}}}%
+        {{hash=b683de378be87dcc731d471ccd31ee34}{%
+           family={Rossi},
+           familyi={R\bibinitperiod},
+           given={Simone},
+           giveni={S\bibinitperiod}}}%
+        {{hash=423e68bbabcfa713ea605a05d41da624}{%
+           family={Cagliero},
+           familyi={C\bibinitperiod},
+           given={Luca},
+           giveni={L\bibinitperiod}}}%
+        {{hash=317f18d911e425fa4a4caad748a79699}{%
+           family={Papotti},
+           familyi={P\bibinitperiod},
+           given={Paolo},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{authorbibnamehash}{7201b6ec2f1bbf4a7633cf38b1d82def}
+      \strng{authornamehash}{7201b6ec2f1bbf4a7633cf38b1d82def}
+      \strng{authorfullhash}{793932531b241df442fc46d2d2625dce}
+      \strng{authorfullhashraw}{793932531b241df442fc46d2d2625dce}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:2603.xxxxx}
+      \field{title}{Think2SQL: Blueprinting Reward Density and Advantage Scaling for Effective Text-to-SQL Reasoning}
+      \field{year}{2026}
+      \true{nocite}
+    \endentry
+    \entry{piao2025litesql}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=7033e1f2ef9e3e0d009e13c5c130ab6c}{%
+           family={Piao},
+           familyi={P\bibinitperiod},
+           given={Shengmin},
+           giveni={S\bibinitperiod}}}%
+        {{hash=f02d1090b81bc6a2e7372f535bc833d9}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Jieun},
+           giveni={J\bibinitperiod}}}%
+        {{hash=626e603a4ef5cbb784f0182fd85c23e8}{%
+           family={Park},
+           familyi={P\bibinitperiod},
+           given={Sanghyun},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{c88a512bec6a7a68d99c936633057868}
+      \strng{fullhash}{c88a512bec6a7a68d99c936633057868}
+      \strng{fullhashraw}{c88a512bec6a7a68d99c936633057868}
+      \strng{bibnamehash}{c88a512bec6a7a68d99c936633057868}
+      \strng{authorbibnamehash}{c88a512bec6a7a68d99c936633057868}
+      \strng{authornamehash}{c88a512bec6a7a68d99c936633057868}
+      \strng{authorfullhash}{c88a512bec6a7a68d99c936633057868}
+      \strng{authorfullhashraw}{c88a512bec6a7a68d99c936633057868}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (ACL)}
+      \field{title}{LitE-SQL: A Lightweight and Efficient Text-to-SQL Framework with Vector-based Schema Linking and Execution-Guided Self-Correction}
+      \field{year}{2025}
+      \true{nocite}
+    \endentry
+    \entry{chen2026rts}{article}{useauthor=false}{}
+      \name{author}{4}{}{%
+        {{hash=e4e87c9a277bc055c574be4d30e55d96}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Kaiwen},
+           giveni={K\bibinitperiod}}}%
+        {{hash=0d5a62267baa24a72d7421c50baf14f1}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Yueting},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=e18bf4f037a6dbd2b8312007d34659f5}{%
+           family={Koudas},
+           familyi={K\bibinitperiod},
+           given={Nick},
+           giveni={N\bibinitperiod}}}%
+        {{hash=2337e67ebb562377164f3470702d6bfc}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={Xiaohui},
+           giveni={X\bibinitperiod}}}%
+      }
+      \strng{authorbibnamehash}{ae7eaaf2cc6f58b9d4cd84e6883533a6}
+      \strng{authornamehash}{ae7eaaf2cc6f58b9d4cd84e6883533a6}
+      \strng{authorfullhash}{2658d933b6656a6cc92ae879156c6736}
+      \strng{authorfullhashraw}{2658d933b6656a6cc92ae879156c6736}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the 29th International Conference on Extending Database Technology (EDBT)}
+      \field{title}{Reliable End-to-End Text-to-SQL Generation}
+      \field{year}{2026}
+      \true{nocite}
+    \endentry
+    \entry{lei2025spider2}{article}{useauthor=false}{}
+      \true{moreauthor}
+      \name{author}{10}{}{%
+        {{hash=b6b0bc2a1ccf23c6ea905e6bda2cc400}{%
+           family={Lei},
+           familyi={L\bibinitperiod},
+           given={Fangyu},
+           giveni={F\bibinitperiod}}}%
+        {{hash=cb530a0a3e5e01e38a2a5955a79c08ae}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Jixuan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=09ed950766adc5379386f512ef608798}{%
+           family={Ye},
+           familyi={Y\bibinitperiod},
+           given={Yuxiao},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=d1ac1086388bdb7ae479168dc6cdcfaa}{%
+           family={Cao},
+           familyi={C\bibinitperiod},
+           given={Ruisheng},
+           giveni={R\bibinitperiod}}}%
+        {{hash=642ecabd49882b39ee8d91a915cd2a00}{%
+           family={Shin},
+           familyi={S\bibinitperiod},
+           given={Dongchan},
+           giveni={D\bibinitperiod}}}%
+        {{hash=07220cbc4ad093e0e05487f099be6e81}{%
+           family={Su},
+           familyi={S\bibinitperiod},
+           given={Hongjin},
+           giveni={H\bibinitperiod}}}%
+        {{hash=dcd7281e32a6d414447bc7c8ca4bc97c}{%
+           family={Suo},
+           familyi={S\bibinitperiod},
+           given={Zhaoqing},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=4a6d26a35d194e0666516c7026d803ac}{%
+           family={Gao},
+           familyi={G\bibinitperiod},
+           given={Hongcheng},
+           giveni={H\bibinitperiod}}}%
+        {{hash=464ba68a9e4fc465828579cb9b10e94c}{%
+           family={Hu},
+           familyi={H\bibinitperiod},
+           given={Wenjing},
+           giveni={W\bibinitperiod}}}%
+        {{hash=2996beb75be77b26db18b01e40ad65fc}{%
+           family={Yin},
+           familyi={Y\bibinitperiod},
+           given={Pengcheng},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{authorbibnamehash}{5badb68d7847345df99601a376048a5f}
+      \strng{authornamehash}{5badb68d7847345df99601a376048a5f}
+      \strng{authorfullhash}{af21f63f43d57b8dbea1d2b8ae5deea9}
+      \strng{authorfullhashraw}{af21f63f43d57b8dbea1d2b8ae5deea9}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the 13th International Conference on Learning Representations (ICLR)}
+      \field{title}{Spider 2.0: Evaluating Language Models on Real-World Enterprise Text-to-SQL Workflows}
+      \field{year}{2025}
+      \true{nocite}
+    \endentry
+    \entry{li2024bird}{article}{useauthor=false}{}
+      \true{moreauthor}
+      \name{author}{10}{}{%
+        {{hash=20e2f54cf4cbc45d48bb0ed78215a321}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Jinyang},
+           giveni={J\bibinitperiod}}}%
+        {{hash=f34c34e7bfee1c214b840e1406f93b43}{%
+           family={Hui},
+           familyi={H\bibinitperiod},
+           given={Binyuan},
+           giveni={B\bibinitperiod}}}%
+        {{hash=b7eef4041bd64fe0c15ceef115e6bbff}{%
+           family={Qu},
+           familyi={Q\bibinitperiod},
+           given={Ge},
+           giveni={G\bibinitperiod}}}%
+        {{hash=2cbc39df0f89c8ea9af0b96d2cbadc84}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Jishuo},
+           giveni={J\bibinitperiod}}}%
+        {{hash=44fb0c93c816097d76ea8d1225c27922}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Binhua},
+           giveni={B\bibinitperiod}}}%
+        {{hash=1023e274e612e693459f729f3e62768f}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Bowen},
+           giveni={B\bibinitperiod}}}%
+        {{hash=35b7ef3646fef661cf0e3e1e5965038d}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Bailin},
+           giveni={B\bibinitperiod}}}%
+        {{hash=4c67840519fa4620538b15e210d93764}{%
+           family={Qin},
+           familyi={Q\bibinitperiod},
+           given={Bowen},
+           giveni={B\bibinitperiod}}}%
+        {{hash=310ea933a95f03e39e5b82783d65cbee}{%
+           family={Geng},
+           familyi={G\bibinitperiod},
+           given={Ruiying},
+           giveni={R\bibinitperiod}}}%
+        {{hash=5f58d2f55c311539197b765cd54b49e6}{%
+           family={Huo},
+           familyi={H\bibinitperiod},
+           given={Nan},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{authorbibnamehash}{587ac08d43c01dc0d25d53388ca9d0b3}
+      \strng{authornamehash}{587ac08d43c01dc0d25d53388ca9d0b3}
+      \strng{authorfullhash}{195b595e7d5953aa70079d2938bed584}
+      \strng{authorfullhashraw}{195b595e7d5953aa70079d2938bed584}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{internalsortvolume}{36}
+      \field{journaltitle}{Advances in Neural Information Processing Systems (NeurIPS)}
+      \field{title}{Can LLM Already Serve as a Database Interface? A Big Bench for Large-Scale Database Grounded Text-to-SQLs}
+      \field{year}{2024}
+      \true{nocite}
+      \field{volume}{36}
+      \range{volume}{1}
+    \endentry
+    \entry{hong2025survey}{article}{useauthor=false}{}
+      \name{author}{7}{}{%
+        {{hash=ad11d5ac54fe520b260e16ea7a7a8cd3}{%
+           family={Hong},
+           familyi={H\bibinitperiod},
+           given={Zijin},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=fc67a6ce608cde5cc7ac90add3c32d3b}{%
+           family={Yuan},
+           familyi={Y\bibinitperiod},
+           given={Zheng},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=1b6ff06d2f2efe4c06546697920a6881}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Qinggang},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=dd060cd064f8f607eb1bee6712820270}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Hao},
+           giveni={H\bibinitperiod}}}%
+        {{hash=aa05933bab8d8d9a405f922ae8269bf8}{%
+           family={Dong},
+           familyi={D\bibinitperiod},
+           given={Junnan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=f4b8daf8dbcf56c05cd325a777a72eb1}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Feiran},
+           giveni={F\bibinitperiod}}}%
+        {{hash=25debcccb3ca8e55a7819b23dc098828}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Xiao},
+           giveni={X\bibinitperiod}}}%
+      }
+      \strng{authorbibnamehash}{49a6e4c2a8767c61b2ba8a62bfd75859}
+      \strng{authornamehash}{49a6e4c2a8767c61b2ba8a62bfd75859}
+      \strng{authorfullhash}{0436b536764151f32e3c2977e59e45f4}
+      \strng{authorfullhashraw}{0436b536764151f32e3c2977e59e45f4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Knowledge and Data Engineering}
+      \field{title}{Next-Generation Database Interfaces: A Survey of LLM-based Text-to-SQL}
+      \field{year}{2025}
+      \true{nocite}
+    \endentry
     \entry{lei2024spider2}{article}{useauthor=false}{}
       \true{moreauthor}
       \name{author}{10}{}{%
@@ -124,8 +536,8 @@
       \strng{authornamehash}{5badb68d7847345df99601a376048a5f}
       \strng{authorfullhash}{af21f63f43d57b8dbea1d2b8ae5deea9}
       \strng{authorfullhashraw}{af21f63f43d57b8dbea1d2b8ae5deea9}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labeltitlesource}{title}
       \field{journaltitle}{arXiv preprint arXiv:2411.07763}
       \field{title}{Spider 2.0: Evaluating Language Models on Real-World Enterprise Text-to-SQL Workflows}
@@ -158,8 +570,8 @@
       \strng{authornamehash}{fa2b149cb8319e8a2906e96bafc923f9}
       \strng{authorfullhash}{fa2b149cb8319e8a2906e96bafc923f9}
       \strng{authorfullhashraw}{fa2b149cb8319e8a2906e96bafc923f9}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{internalsortvolume}{45}
@@ -216,8 +628,8 @@
       \strng{authornamehash}{b9ab5998b82c91719a106f7658b0194e}
       \strng{authorfullhash}{414af452557de1f23d73979f67229e90}
       \strng{authorfullhashraw}{414af452557de1f23d73979f67229e90}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labeltitlesource}{title}
       \field{journaltitle}{arXiv preprint arXiv:2301.02111}
       \field{title}{Few-shot Text-to-SQL Translation using Structure and Content Prompt Learning}
@@ -245,8 +657,8 @@
       \strng{authornamehash}{ece9b87de2869142bbe599dfea51944b}
       \strng{authorfullhash}{ece9b87de2869142bbe599dfea51944b}
       \strng{authorfullhashraw}{ece9b87de2869142bbe599dfea51944b}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{internalsortvolume}{45}
@@ -288,8 +700,8 @@
       \strng{authornamehash}{7e4fe5478ac5a950055c42d47c7f93fc}
       \strng{authorfullhash}{f1276f6144225b95229bac3fa1324fdc}
       \strng{authorfullhashraw}{f1276f6144225b95229bac3fa1324fdc}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labeltitlesource}{title}
       \field{journaltitle}{arXiv preprint arXiv:2305.15637}
       \field{title}{Exploring Dimensions of Generalizability and Few-shot Adaptation in Text-to-SQL Semantic Parsing}
@@ -322,8 +734,8 @@
       \strng{authornamehash}{d0e9fa730db4ce1dfe42f0bda089e3f9}
       \strng{authorfullhash}{d0e9fa730db4ce1dfe42f0bda089e3f9}
       \strng{authorfullhashraw}{d0e9fa730db4ce1dfe42f0bda089e3f9}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{internalsortvolume}{11}
@@ -423,8 +835,8 @@
       \strng{authornamehash}{8a31e8bc4384dc1c6d6cbb7010e04a76}
       \strng{authorfullhash}{0cba07df32e16945ab171e8b7f44c921}
       \strng{authorfullhashraw}{0cba07df32e16945ab171e8b7f44c921}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labeltitlesource}{title}
       \field{journaltitle}{arXiv preprint arXiv:2310.02901}
       \field{title}{ACT-SQL: In-Context Learning for Text-to-SQL with Automatically-Generated Chain-of-Thought}
@@ -478,8 +890,8 @@
       \strng{authornamehash}{304e00d3da90fa6f2ada033083a0a56e}
       \strng{authorfullhash}{10d2b29eac12cb9f0b1de95ccac6112b}
       \strng{authorfullhashraw}{10d2b29eac12cb9f0b1de95ccac6112b}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labeltitlesource}{title}
       \field{journaltitle}{arXiv preprint arXiv:2405.20015}
       \field{title}{X-SQL: Expert Schema Linking and Understanding of Text-to-SQL with Multi-LLMs}
@@ -507,8 +919,8 @@
       \strng{authornamehash}{9e7867286c3952e5eb7099da7821065b}
       \strng{authorfullhash}{9e7867286c3952e5eb7099da7821065b}
       \strng{authorfullhashraw}{9e7867286c3952e5eb7099da7821065b}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{internalsortvolume}{32}
@@ -536,8 +948,8 @@
       \strng{authornamehash}{41631cc8b1adeedaec1ae7d5b81cf1d1}
       \strng{authorfullhash}{41631cc8b1adeedaec1ae7d5b81cf1d1}
       \strng{authorfullhashraw}{41631cc8b1adeedaec1ae7d5b81cf1d1}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labeltitlesource}{title}
       \field{journaltitle}{arXiv preprint arXiv:2504.08753}
       \field{title}{Schema Linking and Understanding: Advances in Text-to-SQL Systems}
@@ -570,8 +982,8 @@
       \strng{authornamehash}{b1538aadc8eba83ed1285ec29d9dd8da}
       \strng{authorfullhash}{b1538aadc8eba83ed1285ec29d9dd8da}
       \strng{authorfullhashraw}{b1538aadc8eba83ed1285ec29d9dd8da}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{arXiv preprint arXiv:2509.00581}
@@ -616,8 +1028,8 @@
       \strng{authornamehash}{9c160cf5016386eb60cad4b740a84db8}
       \strng{authorfullhash}{f15377758278ca2f2a55a7749c6fdd33}
       \strng{authorfullhashraw}{f15377758278ca2f2a55a7749c6fdd33}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labeltitlesource}{title}
       \field{journaltitle}{arXiv preprint arXiv:2406.10786}
       \field{title}{Text-to-SQL Generation using Large Language Model for EHR Analysis}
@@ -641,8 +1053,8 @@
       \strng{authorfullhash}{2b6d724bfcb3114448d87ac037d6a75c}
       \strng{authorfullhashraw}{2b6d724bfcb3114448d87ac037d6a75c}
       \field{extraname}{1}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Дата обращения: 06.11.2025}
@@ -670,8 +1082,8 @@
       \strng{authornamehash}{f22794f69ce5910cb4be68ff9026570d}
       \strng{authorfullhash}{f22794f69ce5910cb4be68ff9026570d}
       \strng{authorfullhashraw}{f22794f69ce5910cb4be68ff9026570d}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{arXiv preprint arXiv:2410.01066}
@@ -695,8 +1107,8 @@
       \strng{authornamehash}{378473e3d2b4b36a675fec3e50e28fad}
       \strng{authorfullhash}{378473e3d2b4b36a675fec3e50e28fad}
       \strng{authorfullhashraw}{378473e3d2b4b36a675fec3e50e28fad}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{arXiv preprint arXiv:2410.07144}
@@ -738,8 +1150,8 @@
       \strng{authornamehash}{eac9230c85ded2ee4a1222fbf769a4d6}
       \strng{authorfullhash}{eac9230c85ded2ee4a1222fbf769a4d6}
       \strng{authorfullhashraw}{eac9230c85ded2ee4a1222fbf769a4d6}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labeltitlesource}{title}
       \field{internalsortvolume}{72}
       \field{journaltitle}{International Journal of Computer Trends and Technology}
@@ -769,8 +1181,8 @@
       \strng{authornamehash}{c83133ddedd92f1940df7c2d26794ec2}
       \strng{authorfullhash}{c83133ddedd92f1940df7c2d26794ec2}
       \strng{authorfullhashraw}{c83133ddedd92f1940df7c2d26794ec2}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{BERT Goes to SQL School: Improving Automatic Grading of SQL Queries}
@@ -796,8 +1208,8 @@
       \strng{authornamehash}{8e819bfd9d5ec62325a5f18e80297154}
       \strng{authorfullhash}{8e819bfd9d5ec62325a5f18e80297154}
       \strng{authorfullhashraw}{8e819bfd9d5ec62325a5f18e80297154}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Texila Journal}
       \field{title}{On Deep Learning Approaches for Single-Turn Text-to-SQL}
@@ -821,8 +1233,8 @@
       \strng{authorfullhash}{df10b7c8598fd5dc703357bc07f9b642}
       \strng{authorfullhashraw}{df10b7c8598fd5dc703357bc07f9b642}
       \field{extraname}{2}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Дата обращения: 06.11.2025}
@@ -853,8 +1265,8 @@
       \strng{authorfullhash}{6c3725838df80a9f867af7766b856952}
       \strng{authorfullhashraw}{6c3725838df80a9f867af7766b856952}
       \field{extraname}{3}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Дата обращения: 06.11.2025}
@@ -885,8 +1297,8 @@
       \strng{authorfullhash}{390fc69e6939d2bb1ce81448616a8646}
       \strng{authorfullhashraw}{390fc69e6939d2bb1ce81448616a8646}
       \field{extraname}{1}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Дата обращения: 06.11.2025}
@@ -917,8 +1329,8 @@
       \strng{authorfullhash}{b581fcfb94d2e7bd4d4e79744683e3dc}
       \strng{authorfullhashraw}{b581fcfb94d2e7bd4d4e79744683e3dc}
       \field{extraname}{1}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Дата обращения: 06.11.2025}
@@ -949,8 +1361,8 @@
       \strng{authorfullhash}{03f8a3a5aa2772052c3c8b90a21ebb3f}
       \strng{authorfullhashraw}{03f8a3a5aa2772052c3c8b90a21ebb3f}
       \field{extraname}{1}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Дата обращения: 06.11.2025}
@@ -981,8 +1393,8 @@
       \strng{authorfullhash}{52523ceebc63d3bc46445b6a10a63ee8}
       \strng{authorfullhashraw}{52523ceebc63d3bc46445b6a10a63ee8}
       \field{extraname}{2}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Дата обращения: 06.11.2025}
@@ -1043,8 +1455,8 @@
       \strng{authorfullhash}{0523b13262b12c215d8009938f5c14f1}
       \strng{authorfullhashraw}{0523b13262b12c215d8009938f5c14f1}
       \field{extraname}{1}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Дата обращения: 06.11.2025}
@@ -1075,8 +1487,8 @@
       \strng{authorfullhash}{6e6620801cb5737cd07f1ff18d5a3b77}
       \strng{authorfullhashraw}{6e6620801cb5737cd07f1ff18d5a3b77}
       \field{extraname}{5}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Дата обращения: 06.11.2025}
@@ -1107,8 +1519,8 @@
       \strng{authorfullhash}{54ee6fa92d14f266f2fb5cdd6418ab83}
       \strng{authorfullhashraw}{54ee6fa92d14f266f2fb5cdd6418ab83}
       \field{extraname}{2}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Дата обращения: 06.11.2025}
@@ -1135,8 +1547,8 @@
       \strng{authornamehash}{3ad9458a1f513d62a08e897b6ed3cce7}
       \strng{authorfullhash}{3ad9458a1f513d62a08e897b6ed3cce7}
       \strng{authorfullhashraw}{3ad9458a1f513d62a08e897b6ed3cce7}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labeltitlesource}{title}
       \field{journaltitle}{TigerData Blog}
       \field{title}{Text-to-SQL: A Developer's Zero-to-Hero Guide}
@@ -1165,8 +1577,8 @@
       \strng{authornamehash}{d94e73036e94ccd05bcb22e47cdd5932}
       \strng{authorfullhash}{d94e73036e94ccd05bcb22e47cdd5932}
       \strng{authorfullhashraw}{d94e73036e94ccd05bcb22e47cdd5932}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{DataMinded Blog}
@@ -1197,8 +1609,8 @@
       \strng{authorfullhash}{33d01070750619870991aac98a8f69e0}
       \strng{authorfullhashraw}{33d01070750619870991aac98a8f69e0}
       \field{extraname}{1}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Digital Ocean Tutorials}
@@ -1229,8 +1641,8 @@
       \strng{authorfullhash}{29c3c3875bfd9c155ff705c9199ce84c}
       \strng{authorfullhashraw}{29c3c3875bfd9c155ff705c9199ce84c}
       \field{extraname}{1}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{AskYourDatabase Blog}
@@ -1261,8 +1673,8 @@
       \strng{authorfullhash}{0bcb49fb6d39f94ace8a519c8211f1e7}
       \strng{authorfullhashraw}{0bcb49fb6d39f94ace8a519c8211f1e7}
       \field{extraname}{2}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Webasha Blog}
@@ -1293,8 +1705,8 @@
       \strng{authorfullhash}{ef1409dc8e6a6dbd1f1286f940c80efe}
       \strng{authorfullhashraw}{ef1409dc8e6a6dbd1f1286f940c80efe}
       \field{extraname}{3}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{GeeksforGeeks}
@@ -1354,8 +1766,8 @@
       \strng{authorfullhash}{e38211802640b16d6c6edc3c421f30e4}
       \strng{authorfullhashraw}{e38211802640b16d6c6edc3c421f30e4}
       \field{extraname}{4}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{KDnuggets}
@@ -1386,8 +1798,8 @@
       \strng{authorfullhash}{371a0694b956774bb3080def1fa8b9ac}
       \strng{authorfullhashraw}{371a0694b956774bb3080def1fa8b9ac}
       \field{extraname}{5}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Zilliz Blog}
@@ -1418,8 +1830,8 @@
       \strng{authorfullhash}{4d7e5f784bb5801c23c91ba37ed2649d}
       \strng{authorfullhashraw}{4d7e5f784bb5801c23c91ba37ed2649d}
       \field{extraname}{1}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{AWS Prescriptive Guidance}
@@ -1450,8 +1862,8 @@
       \strng{authorfullhash}{f158a3670929f3f8841ffa7bd037849c}
       \strng{authorfullhashraw}{f158a3670929f3f8841ffa7bd037849c}
       \field{extraname}{6}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{TigerData Blog}
@@ -1481,8 +1893,8 @@
       \strng{authornamehash}{1ec1a0f0b61c5d35dc76abbdcc2b3e8e}
       \strng{authorfullhash}{1ec1a0f0b61c5d35dc76abbdcc2b3e8e}
       \strng{authorfullhashraw}{1ec1a0f0b61c5d35dc76abbdcc2b3e8e}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{DEV Community}
@@ -1513,8 +1925,8 @@
       \strng{authorfullhash}{59b144a13a4d621e45de56e9c8ba874f}
       \strng{authorfullhashraw}{59b144a13a4d621e45de56e9c8ba874f}
       \field{extraname}{7}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Tinybird Blog}
@@ -1544,8 +1956,8 @@
       \strng{authornamehash}{3b7508bc4f4cf740593439b0d4a9732f}
       \strng{authorfullhash}{3b7508bc4f4cf740593439b0d4a9732f}
       \strng{authorfullhashraw}{3b7508bc4f4cf740593439b0d4a9732f}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Keyur's Blog}
@@ -1576,8 +1988,8 @@
       \strng{authorfullhash}{4d7e5f784bb5801c23c91ba37ed2649d}
       \strng{authorfullhashraw}{4d7e5f784bb5801c23c91ba37ed2649d}
       \field{extraname}{2}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{AWS Machine Learning Blog}
@@ -1608,8 +2020,8 @@
       \strng{authorfullhash}{4620cf6e744a5377fd4b14c91a4c61fd}
       \strng{authorfullhashraw}{4620cf6e744a5377fd4b14c91a4c61fd}
       \field{extraname}{8}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{FlowiseAI Documentation}
@@ -1671,8 +2083,8 @@
       \strng{authorfullhash}{4194b354f2ccb16577fd0f76fff5d56c}
       \strng{authorfullhashraw}{4194b354f2ccb16577fd0f76fff5d56c}
       \field{extraname}{9}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{CID Blog}
@@ -1703,8 +2115,8 @@
       \strng{authorfullhash}{c2897d4738d8fd643743ca427344b1f3}
       \strng{authorfullhashraw}{c2897d4738d8fd643743ca427344b1f3}
       \field{extraname}{3}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Wikipedia}
@@ -1732,8 +2144,8 @@
       \strng{authornamehash}{140864078aeca1c7c35b4beb33c53c34}
       \strng{authorfullhash}{140864078aeca1c7c35b4beb33c53c34}
       \strng{authorfullhashraw}{140864078aeca1c7c35b4beb33c53c34}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Azure AI Services Documentation}
@@ -1764,8 +2176,8 @@
       \strng{authorfullhash}{ef1409dc8e6a6dbd1f1286f940c80efe}
       \strng{authorfullhashraw}{ef1409dc8e6a6dbd1f1286f940c80efe}
       \field{extraname}{10}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{GeeksforGeeks}
@@ -1793,8 +2205,8 @@
       \strng{authornamehash}{3fd27cfab6ddf39f7f48e6cde5eeefe2}
       \strng{authorfullhash}{3fd27cfab6ddf39f7f48e6cde5eeefe2}
       \strng{authorfullhashraw}{3fd27cfab6ddf39f7f48e6cde5eeefe2}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{DEV Community}
@@ -1825,8 +2237,8 @@
       \strng{authorfullhash}{21f3cab5a4d6abcf34d0979df78cfe1b}
       \strng{authorfullhashraw}{21f3cab5a4d6abcf34d0979df78cfe1b}
       \field{extraname}{11}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{AlphaBravo Blog}
@@ -1857,8 +2269,8 @@
       \strng{authorfullhash}{0fe4d984a1d18e41f58cb477da1e1b19}
       \strng{authorfullhashraw}{0fe4d984a1d18e41f58cb477da1e1b19}
       \field{extraname}{12}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{RAGFlow Documentation}
@@ -1888,8 +2300,8 @@
       \strng{authornamehash}{0c1da32485b901492e632fe57c46b38f}
       \strng{authorfullhash}{0c1da32485b901492e632fe57c46b38f}
       \strng{authorfullhashraw}{0c1da32485b901492e632fe57c46b38f}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Substack}
@@ -1920,8 +2332,8 @@
       \strng{authorfullhash}{e9db267fc895bb591c2b6ae5093d7522}
       \strng{authorfullhashraw}{e9db267fc895bb591c2b6ae5093d7522}
       \field{extraname}{2}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Programming Historian}
@@ -1984,8 +2396,8 @@
       \strng{authorfullhash}{a38e33b44780a89b4995faf2c50a9e02}
       \strng{authorfullhashraw}{a38e33b44780a89b4995faf2c50a9e02}
       \field{extraname}{14}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{UIBakery Blog}
@@ -2016,8 +2428,8 @@
       \strng{authorfullhash}{ca7f05b1e822cf6e09213a787a03b7bd}
       \strng{authorfullhashraw}{ca7f05b1e822cf6e09213a787a03b7bd}
       \field{extraname}{15}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{BrowserStack Blog}
@@ -2047,8 +2459,8 @@
       \strng{authornamehash}{4b3be28cfb1ab7b5da85f4d9dba38c44}
       \strng{authorfullhash}{4b3be28cfb1ab7b5da85f4d9dba38c44}
       \strng{authorfullhashraw}{4b3be28cfb1ab7b5da85f4d9dba38c44}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Earthly Blog}
@@ -2079,8 +2491,8 @@
       \strng{authorfullhash}{a88a534443a32978b928ee42a9001505}
       \strng{authorfullhashraw}{a88a534443a32978b928ee42a9001505}
       \field{extraname}{16}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Deepnote Blog}
@@ -2111,8 +2523,8 @@
       \strng{authorfullhash}{c2897d4738d8fd643743ca427344b1f3}
       \strng{authorfullhashraw}{c2897d4738d8fd643743ca427344b1f3}
       \field{extraname}{4}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Wikipedia}
@@ -2143,8 +2555,8 @@
       \strng{authorfullhash}{7eabfa4626320e3f3312b49f487b6157}
       \strng{authorfullhashraw}{7eabfa4626320e3f3312b49f487b6157}
       \field{extraname}{17}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Latitude Blog}
@@ -2175,8 +2587,8 @@
       \strng{authorfullhash}{031cf5d365274436c19d97147dbefac2}
       \strng{authorfullhashraw}{031cf5d365274436c19d97147dbefac2}
       \field{extraname}{18}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{TensorScience Blog}
@@ -2207,8 +2619,8 @@
       \strng{authorfullhash}{a88a534443a32978b928ee42a9001505}
       \strng{authorfullhashraw}{a88a534443a32978b928ee42a9001505}
       \field{extraname}{19}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Deepnote Blog}
@@ -2239,8 +2651,8 @@
       \strng{authorfullhash}{0df7666ee98a670d23b9a89e446afe55}
       \strng{authorfullhashraw}{0df7666ee98a670d23b9a89e446afe55}
       \field{extraname}{20}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{DEV Community}
@@ -2303,8 +2715,8 @@
       \strng{authorfullhash}{48465385431c183da1f59b5076b37586}
       \strng{authorfullhashraw}{48465385431c183da1f59b5076b37586}
       \field{extraname}{22}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{CoDiLime Blog}
@@ -2335,8 +2747,8 @@
       \strng{authorfullhash}{6e9fb975b3f4c47afe75eac9b78011a7}
       \strng{authorfullhashraw}{6e9fb975b3f4c47afe75eac9b78011a7}
       \field{extraname}{23}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Prefect Blog}
@@ -2366,8 +2778,8 @@
       \strng{authornamehash}{99f02596f166bda46851adffd922b465}
       \strng{authorfullhash}{99f02596f166bda46851adffd922b465}
       \strng{authorfullhashraw}{99f02596f166bda46851adffd922b465}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Stephen SMJ Blog}
@@ -2397,8 +2809,8 @@
       \strng{authornamehash}{f7c1e564b1d7d79c858cdfbcff59559f}
       \strng{authorfullhash}{f7c1e564b1d7d79c858cdfbcff59559f}
       \strng{authorfullhashraw}{f7c1e564b1d7d79c858cdfbcff59559f}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Anshal's Blog}
@@ -2426,8 +2838,8 @@
       \strng{authornamehash}{4e3f864ba9cf3c62d471e1c62414d098}
       \strng{authorfullhash}{4e3f864ba9cf3c62d471e1c62414d098}
       \strng{authorfullhashraw}{4e3f864ba9cf3c62d471e1c62414d098}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Databricks Machine Learning Documentation}
@@ -2458,8 +2870,8 @@
       \strng{authorfullhash}{773f7618b2ca36a31f29f9688818f0bf}
       \strng{authorfullhashraw}{773f7618b2ca36a31f29f9688818f0bf}
       \field{extraname}{24}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Chat2DB Blog}
@@ -2490,8 +2902,8 @@
       \strng{authorfullhash}{59b144a13a4d621e45de56e9c8ba874f}
       \strng{authorfullhashraw}{59b144a13a4d621e45de56e9c8ba874f}
       \field{extraname}{25}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Tinybird Blog}
@@ -2522,8 +2934,8 @@
       \strng{authorfullhash}{d091397bbf8398d96b0121de30c33e5a}
       \strng{authorfullhashraw}{d091397bbf8398d96b0121de30c33e5a}
       \field{extraname}{26}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Codeanywhere Blog}
@@ -2554,8 +2966,8 @@
       \strng{authorfullhash}{9688a568902e4b07b60557b566bdd820}
       \strng{authorfullhashraw}{9688a568902e4b07b60557b566bdd820}
       \field{extraname}{1}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Дата обращения: 06.11.2025}
@@ -2618,8 +3030,8 @@
       \strng{authorfullhash}{05f66aa4fc10e23aad2f7c1bdf9373e7}
       \strng{authorfullhashraw}{05f66aa4fc10e23aad2f7c1bdf9373e7}
       \field{extraname}{27}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Дата обращения: 06.11.2025}
@@ -2650,8 +3062,8 @@
       \strng{authorfullhash}{15fbe03706ae557d77a221361a104b20}
       \strng{authorfullhashraw}{15fbe03706ae557d77a221361a104b20}
       \field{extraname}{28}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Дата обращения: 06.11.2025}
@@ -2682,8 +3094,8 @@
       \strng{authorfullhash}{6c3725838df80a9f867af7766b856952}
       \strng{authorfullhashraw}{6c3725838df80a9f867af7766b856952}
       \field{extraname}{6}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Дата обращения: 06.11.2025}
@@ -2711,8 +3123,8 @@
       \strng{authornamehash}{a5e13387c005fe8d4e1c67f40a84c17b}
       \strng{authorfullhash}{a5e13387c005fe8d4e1c67f40a84c17b}
       \strng{authorfullhashraw}{a5e13387c005fe8d4e1c67f40a84c17b}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Дата обращения: 06.11.2025}
@@ -2743,8 +3155,8 @@
       \strng{authorfullhash}{b581fcfb94d2e7bd4d4e79744683e3dc}
       \strng{authorfullhashraw}{b581fcfb94d2e7bd4d4e79744683e3dc}
       \field{extraname}{2}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Дата обращения: 06.11.2025}
@@ -2775,8 +3187,8 @@
       \strng{authorfullhash}{03f8a3a5aa2772052c3c8b90a21ebb3f}
       \strng{authorfullhashraw}{03f8a3a5aa2772052c3c8b90a21ebb3f}
       \field{extraname}{5}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Дата обращения: 06.11.2025}
@@ -2807,8 +3219,8 @@
       \strng{authorfullhash}{03f8a3a5aa2772052c3c8b90a21ebb3f}
       \strng{authorfullhashraw}{03f8a3a5aa2772052c3c8b90a21ebb3f}
       \field{extraname}{6}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Дата обращения: 06.11.2025}
@@ -2839,8 +3251,8 @@
       \strng{authorfullhash}{e8b10c76992e477033821fa21af54d23}
       \strng{authorfullhashraw}{e8b10c76992e477033821fa21af54d23}
       \field{extraname}{7}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Дата обращения: 06.11.2025}
@@ -2871,8 +3283,8 @@
       \strng{authorfullhash}{21bb5f31830579261e8623b7c05a29d7}
       \strng{authorfullhashraw}{21bb5f31830579261e8623b7c05a29d7}
       \field{extraname}{29}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Дата обращения: 06.11.2025}
@@ -2935,8 +3347,8 @@
       \strng{authorfullhash}{df10b7c8598fd5dc703357bc07f9b642}
       \strng{authorfullhashraw}{df10b7c8598fd5dc703357bc07f9b642}
       \field{extraname}{8}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Дата обращения: 06.11.2025}
@@ -2967,8 +3379,8 @@
       \strng{authorfullhash}{df10b7c8598fd5dc703357bc07f9b642}
       \strng{authorfullhashraw}{df10b7c8598fd5dc703357bc07f9b642}
       \field{extraname}{9}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Дата обращения: 06.11.2025}
@@ -2999,8 +3411,8 @@
       \strng{authorfullhash}{6e6620801cb5737cd07f1ff18d5a3b77}
       \strng{authorfullhashraw}{6e6620801cb5737cd07f1ff18d5a3b77}
       \field{extraname}{10}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Дата обращения: 06.11.2025}
@@ -3031,8 +3443,8 @@
       \strng{authorfullhash}{6e6620801cb5737cd07f1ff18d5a3b77}
       \strng{authorfullhashraw}{6e6620801cb5737cd07f1ff18d5a3b77}
       \field{extraname}{11}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Дата обращения: 06.11.2025}
@@ -3063,8 +3475,8 @@
       \strng{authorfullhash}{52523ceebc63d3bc46445b6a10a63ee8}
       \strng{authorfullhashraw}{52523ceebc63d3bc46445b6a10a63ee8}
       \field{extraname}{7}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Дата обращения: 06.11.2025}
@@ -3095,8 +3507,8 @@
       \strng{authorfullhash}{52523ceebc63d3bc46445b6a10a63ee8}
       \strng{authorfullhashraw}{52523ceebc63d3bc46445b6a10a63ee8}
       \field{extraname}{8}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Дата обращения: 06.11.2025}
@@ -3125,8 +3537,8 @@
       \strng{authorfullhash}{0523b13262b12c215d8009938f5c14f1}
       \strng{authorfullhashraw}{0523b13262b12c215d8009938f5c14f1}
       \field{extraname}{2}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Дата обращения: 06.11.2025}
@@ -3155,8 +3567,8 @@
       \strng{authorfullhash}{0523b13262b12c215d8009938f5c14f1}
       \strng{authorfullhashraw}{0523b13262b12c215d8009938f5c14f1}
       \field{extraname}{3}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Дата обращения: 06.11.2025}
@@ -3184,8 +3596,8 @@
       \strng{authornamehash}{f431db65cea024a5f19eab835afefee2}
       \strng{authorfullhash}{f431db65cea024a5f19eab835afefee2}
       \strng{authorfullhashraw}{f431db65cea024a5f19eab835afefee2}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Дата обращения: 06.11.2025}

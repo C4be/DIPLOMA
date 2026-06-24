@@ -1,28 +1,34 @@
+# OS/editor artifacts
 .DS_Store
 
-# LaTeX intermediate files
-*.aux
-*.bcf
-*.fdb*
-*.fls
-*.log
-*.xml
-*.blg
-*.glo*
-*.gls
-*.ist
-*.lof
-*.lot
-*.out
-*.toc
-*.synctex.gz
-*.xdy
-*.xdv
-*.nav
-*.snm
-*.vrb
-*.bbl*
+# Python artifacts
+__pycache__/
+*.py[cod]
+.venv/
+venv/
 
-# Build files
-/.latexmkrc
-latex.out
+# Local environment files
+.env
+*.env
+cloud.env
+my_tmp/
+
+# Docker Compose local volumes and caches
+.hf_cache/
+.chroma_data/
+.postgres_data/
+.minio_data/
+.files_info_data/
+.ui_data/
+.redis_queue/
+
+# Large database dumps
+main_db/backup/*.sql.gz
+main_db/backup/demo-20250901-3m.sql.gz
+main_db/backup/demo-20250901-6m.sql.gz
+
+# Large meeting/video recordings
+*.webm
+*.mp4
+*.mov
+1-ая встреча по диплому 2026-02-06_140300.webm

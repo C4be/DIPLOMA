@@ -1,0 +1,376 @@
+services:
+
+  # =================== Interface ===================
+
+  # ===========================================
+  # Gradio интерфейс
+  # ===========================================
+  ui:
+    build: ui/.
+    container_name: ui
+    environment:
+      - DB_DRIVER=postgresql+psycopg2
+      - DB_USER=admin
+      - DB_PASS=admin
+      - DB_HOST=db_for_ui
+      - DB_PORT=5432
+      - DB_NAME=questions_answers
+      - LOG_LEVEL=DEBUG
+      - LOG_PATH=.logs
+      - LOG_INTO_FILE=true
+      - LOG_IS_USE=true
+      - MAKE_SHARE=false
+      - UI_THEME=Citrus
+    ports:
+      - "7860:7860"
+    depends_on:
+      db_for_ui:
+        condition: service_healthy
+    restart: unless-stopped
+
+  # =================== Agent ===================
+
+  agent_service:
+    build:
+      context: agent/
+      dockerfile: Dockerfile
+    container_name: agent_service
+    ports:
+      - "8008:8000"
+    depends_on:
+      - rag_service
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/docs"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+
+  db_connector_service:
+    build:
+      context: db_connector_service/
+      dockerfile: Dockerfile
+    container_name: db_connector_service
+    ports:
+      - "8899:8000"
+    environment:
+      - DB_URL=postgresql+asyncpg://postgres:postgres@postgres_demo:5432/demo
+    depends_on:
+      - postgres_demo
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/docs"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+
+
+  # =================== RAG ===================
+
+  # ===========================================
+  # EMBEDDING MODEL SERVICE
+  # ===========================================
+  embedding_model_service:
+    build:
+      context: embedding_model_service/
+      dockerfile: Dockerfile
+    container_name: embedding_model_service
+    ports:
+      - "8001:8000"
+    volumes:
+      # Прокидываем кэш HuggingFace, чтобы модель скачалась 1 раз
+      - .hf_cache:/app/model_cache
+    environment:
+      - HF_HOME=/app/model_cache
+      # - EMBEDDING_MODEL=intfloat/multilingual-e5-small
+      - EMBEDDING_MODEL=intfloat/multilingual-e5-base
+    restart: on-failure
+    healthcheck:
+      test: ["CMD-SHELL", "timeout 5 bash -c 'echo > /dev/tcp/localhost/8000' || exit 0"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 120s
+
+
+  # ===========================================
+  # Queue worker
+  # ===========================================
+  ingestion_worker:
+    build:
+      context: ingest_pipeline_service/
+      dockerfile: Dockerfile
+    command: python run_worker.py
+    depends_on:
+      - redis_queue
+      - chromadb
+    environment:
+      - REDIS_HOST=redis_queue
+      - REDIS_PORT=6379
+      - REDIS_DB=0
+      - MINIO_HOST=minio
+      - MINIO_PORT=9000
+      - MINIO_ID=minio
+      - MINIO_PASS=minio123
+      - MINIO_REGION=us-east-1
+      - MINIO_BUCKET=ingestion-bucket
+      - FILE_SERVICE_URL=http://rag_service:8000
+      - CHROMA_HOST=chromadb
+      - CHROMA_PORT=8000
+      - CHROMA_COLLECTION_NAME=rag_collection
+      - CHROMA_RESULT_LIMIT=5
+      - EMBEDDING_MODEL_URL=http://embedding_model_service:8000
+    restart: always
+
+
+  # ===========================================
+  # INGEST PIPELINE
+  # ===========================================
+  ingest_pipeline_service:
+    build:
+      context: ingest_pipeline_service/
+      dockerfile: Dockerfile
+    container_name: ingest_pipeline_service
+    ports:
+      - "8002:8000"
+    depends_on:
+      redis_queue:
+        condition: service_started
+      minio:
+        condition: service_healthy
+      chromadb:
+        condition: service_healthy
+      embedding_model_service:
+        condition: service_healthy
+      # file_service:
+      #   condition: service_healthy
+    environment:
+      - REDIS_HOST=redis_queue
+      - REDIS_PORT=6379
+      - REDIS_DB=0
+      - MINIO_HOST=minio
+      - MINIO_PORT=9000
+      - MINIO_ID=minio
+      - MINIO_PASS=minio123
+      - MINIO_REGION=us-east-1
+      - MINIO_BUCKET=ingestion-bucket
+      - FILE_SERVICE_URL=http://rag_service:8000
+      - CHROMA_HOST=chromadb
+      - CHROMA_PORT=8000
+      - CHROMA_COLLECTION_NAME=rag_collection
+      - CHROMA_RESULT_LIMIT=5
+      - EMBEDDING_MODEL_URL=http://embedding_model_service:8000
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/docs"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # ===========================================
+  # RETRIEVAL PIPELINE
+  # ===========================================
+  retrieval_pipeline_service:
+    build:
+      context: retrieval_pipeline_service/
+      dockerfile: Dockerfile
+    container_name: retrieval_pipeline_service
+    ports:
+      - "8004:8000"
+    depends_on:
+      chromadb:
+        condition: service_healthy
+      embedding_model_service:
+        condition: service_healthy
+    environment:
+      - CHROMA_HOST=chromadb
+      - CHROMA_PORT=8000
+      - CHROMA_COLLECTION_NAME=rag_collection
+      - CHROMA_RESULT_LIMIT=5
+      - EMBEDDING_MODEL_URL=http://embedding_model_service:8000
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/docs"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+
+  # ===========================================
+  # RAG_SERVICE
+  # ===========================================
+  rag_service:
+    build:
+      context: rag_service/
+      dockerfile: Dockerfile
+    container_name: rag_service
+    ports:
+      - "8005:8000"
+    depends_on:
+      redis_queue:
+        condition: service_started
+      minio:
+        condition: service_healthy
+      db_files_info:
+        condition: service_healthy
+    environment:
+      - MINIO_URL=http://minio:9000
+      - MINIO_ID=minio
+      - MINIO_PASS=minio123
+      - MINIO_REGION=us-east-1
+      - POSTGRES_HOST=db_files_info
+      - POSTGRES_PORT=5432
+      - MINIO_BUCKET=ingestion-bucket
+      # - POSTGRES_PORT=5435
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=admin
+      - POSTGRES_DB=files_info
+      - POSTGRES_ECHO=true
+
+
+
+  # =================== Databases ===================
+
+  # ===========================================
+  # Очередь
+  # ===========================================
+  redis_queue:
+    image: redis:7
+    container_name: redis_queue
+    ports:
+      - "6379:6379"
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+    volumes:
+      - .redis_queue:/data
+    restart: unless-stopped
+
+
+  # ===========================================
+  # Main DataBase (Авиаперевозки)
+  # ===========================================
+  postgres_demo:
+    build: main_db
+    container_name: postgres_demo
+    environment:
+      POSTGRES_DB: demo
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5433:5432"
+    volumes:
+      - .postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+
+  # ===========================================
+  # База данных для хранения информации о файлах в S3
+  # ===========================================
+  db_files_info:
+    image: postgres:16-alpine
+    container_name: db_files_info
+    environment:
+      POSTGRES_DB: files_info
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin
+    ports:
+      - "5435:5432"
+    volumes:
+      - .files_info_data:/var/lib/postgresql/data
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+
+  # ===========================================
+  # ChromaDB (Vector Store)
+  # ===========================================
+  chromadb:
+    image: chromadb/chroma:latest
+    container_name: chromadb
+    ports:
+      - "8000:8000"
+    volumes:
+      - .chroma_data:/data
+    environment:
+      IS_PERSISTENT: "TRUE"
+      PERSIST_DIRECTORY: /data
+      ANONYMIZED_TELEMETRY: "FALSE"
+    healthcheck:
+      test: ["CMD-SHELL", "timeout 5 bash -c 'echo > /dev/tcp/localhost/8000' || exit 0"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 60s
+    restart: on-failure
+
+
+
+
+  # ===========================================
+  # MinIO (Object Storage – staging для файлов)
+  # ===========================================
+  minio:
+    image: minio/minio:RELEASE.2024-01-16T16-07-38Z
+    container_name: minio
+    command: server /data --console-address ":9001"
+    ports:
+      - "9000:9000"   # S3 API
+      - "9001:9001"   # Web UI
+    environment:
+      MINIO_ROOT_USER: minio
+      MINIO_ROOT_PASSWORD: minio123
+    volumes:
+      - .minio_data:/data
+    healthcheck:
+      test: ["CMD", "mc", "ready", "local"]  # используем mc admin ready
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    restart: unless-stopped
+
+
+  # ===========================================
+  # Q&A база для интерфейса
+  # ===========================================
+  db_for_ui:
+    image: postgres:16-alpine
+    container_name: db_for_ui
+    environment:
+      POSTGRES_DB: questions_answers
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin
+    ports:
+      - "5432:5432"
+    volumes:
+      - .ui_data:/var/lib/postgresql/data
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+
+volumes:
+  postgres_data:
+  ui_data:
+  minio_data:
+  chroma_data:
+  files_info_data:
+  hf_cache:
+  redis_queue:

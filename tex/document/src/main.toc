@@ -1,0 +1,102 @@
+\contentsline {structure}{\numberline {}РЕФЕРАТ}{2}{structure.1}%
+\babel@toc {russian}{}\relax 
+\contentsline {structure}{\numberline {}ТЕРМИНЫ~И~ОПРЕДЕЛЕНИЯ}{6}{structure.2}%
+\contentsline {structure}{\numberline {}ПЕРЕЧЕНЬ~СОКРАЩЕНИЙ~И~ОБОЗНАЧЕНИЙ}{10}{structure.3}%
+\contentsline {structure}{\numberline {}ВВЕДЕНИЕ}{12}{structure.4}%
+\contentsline {subsection}{Актуальность работы}{12}{structure.4}%
+\contentsline {subsection}{Научная новизна исследования}{12}{structure.4}%
+\contentsline {subsection}{Цели и задачи исследования}{13}{structure.4}%
+\contentsline {subsection}{Объект и предмет исследования}{14}{Item.5}%
+\contentsline {subsection}{Теоретические и методические основы исследования}{14}{Item.5}%
+\contentsline {subsection}{Новизна и основные результаты исследования}{14}{Item.5}%
+\contentsline {subsection}{Апробация и внедрение результатов}{15}{Item.5}%
+\contentsline {subsection}{Библиографическое описание}{15}{Item.5}%
+\contentsline {section}{\numberline {1}Проблема NLIDB и эволюция подходов к Text-to-SQL}{17}{section.1}%
+\contentsline {section}{\numberline {2}Сравнение существующих подходов и анализ аналогов}{19}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Сравнение существующих подходов}{19}{subsection.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.1}Современные направления в Text-to-SQL}{19}{subsubsection.2.1.1}%
+\contentsline {subsubsection}{\numberline {2.1.2}Современные направления в RAG для баз данных}{20}{subsubsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.2}Сравнение конкурентов}{22}{subsection.2.2}%
+\contentsline {section}{\numberline {3}Обоснование цели и задач исследования}{25}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Обоснование цели работы}{25}{subsection.3.1}%
+\contentsline {section}{\numberline {4}Принципы и логическая модель решения}{27}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Ключевые архитектурные принципы}{27}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Описание компонентов системы (HLD)}{27}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Логика работы конвейера обработки данных (RAG Pipeline)}{28}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Принцип самокоррекции (Self-Heal)}{29}{subsection.4.4}%
+\contentsline {section}{\numberline {5}Обоснование и описание архитектуры и стека технологий}{31}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Обоснование выбора архитектуры}{31}{subsection.5.1}%
+\contentsline {subsubsection}{\numberline {5.1.1}Анализ альтернативных архитектур}{31}{subsubsection.5.1.1}%
+\contentsline {subsubsection}{\numberline {5.1.2}Обоснование выбора паттерна RAG}{32}{subsubsection.5.1.2}%
+\contentsline {subsubsection}{\numberline {5.1.3}Обоснование разделения на конвейеры Ingest и Retrieval}{33}{subsubsection.5.1.3}%
+\contentsline {subsection}{\numberline {5.2}Обоснование выбора технологий и инструментов}{34}{subsection.5.2}%
+\contentsline {subsubsection}{\numberline {5.2.1}Выбор языка программирования — Python}{34}{subsubsection.5.2.1}%
+\contentsline {subsubsection}{\numberline {5.2.2}Выбор фреймворка FastAPI}{34}{subsubsection.5.2.2}%
+\contentsline {subsubsection}{\numberline {5.2.3}Векторная база данных — ChromaDB}{35}{subsubsection.5.2.3}%
+\contentsline {subsubsection}{\numberline {5.2.4}Реляционная база данных — PostgreSQL}{36}{subsubsection.5.2.4}%
+\contentsline {subsubsection}{\numberline {5.2.5}Объектное хранилище — MinIO}{37}{subsubsection.5.2.5}%
+\contentsline {subsubsection}{\numberline {5.2.6}Очередь задач — Redis Queue (RQ)}{37}{subsubsection.5.2.6}%
+\contentsline {subsubsection}{\numberline {5.2.7}Модели эмбеддингов — HuggingFace Transformers}{38}{subsubsection.5.2.7}%
+\contentsline {subsubsection}{\numberline {5.2.8}Контейнеризация — Docker и Docker Compose}{39}{subsubsection.5.2.8}%
+\contentsline {section}{\numberline {6}Ключевые алгоритмы и формулы}{40}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Алгоритм разбиения текста на фрагменты (Text Chunking)}{40}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Векторизация текста (Text Embedding)}{41}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Семантический поиск на основе косинусного сходства}{42}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Алгоритм конвейера индексации (Ingest Pipeline)}{44}{subsection.6.4}%
+\contentsline {subsection}{\numberline {6.5}Алгоритм генерации ответа (RAG Pipeline)}{45}{subsection.6.5}%
+\contentsline {subsection}{\numberline {6.6}Агентный цикл (ReAct-паттерн)}{47}{subsection.6.6}%
+\contentsline {subsection}{\numberline {6.7}Метрики оценки качества LLM-моделей}{49}{subsection.6.7}%
+\contentsline {section}{\numberline {7}Программная реализация}{51}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Сервис векторизации текста (Embedding Model Service)}{51}{subsection.7.1}%
+\contentsline {subsubsection}{\numberline {7.1.1}Класс модели эмбеддингов}{51}{subsubsection.7.1.1}%
+\contentsline {subsubsection}{\numberline {7.1.2}Инициализация сервиса и REST API}{51}{subsubsection.7.1.2}%
+\contentsline {subsection}{\numberline {7.2}Конвейер индексации (Ingest Pipeline Service)}{52}{subsection.7.2}%
+\contentsline {subsubsection}{\numberline {7.2.1}Приём запроса и постановка задачи в очередь}{52}{subsubsection.7.2.1}%
+\contentsline {subsubsection}{\numberline {7.2.2}Сервис управления очередью задач}{53}{subsubsection.7.2.2}%
+\contentsline {subsubsection}{\numberline {7.2.3}Запуск фонового воркера}{54}{subsubsection.7.2.3}%
+\contentsline {subsubsection}{\numberline {7.2.4}Сервис векторизации и сохранения в ChromaDB}{55}{subsubsection.7.2.4}%
+\contentsline {subsubsection}{\numberline {7.2.5}Загрузка файла из MinIO во временное хранилище}{56}{subsubsection.7.2.5}%
+\contentsline {subsection}{\numberline {7.3}Конвейер поиска (Retrieval Pipeline Service)}{57}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}Сервис доступа к базе данных (DB Connector Service)}{59}{subsection.7.4}%
+\contentsline {subsection}{\numberline {7.5}Агентный модуль (Agent)}{61}{subsection.7.5}%
+\contentsline {subsubsection}{\numberline {7.5.1}Структура состояния агента}{61}{subsubsection.7.5.1}%
+\contentsline {subsubsection}{\numberline {7.5.2}Граф агента (LangGraph)}{62}{subsubsection.7.5.2}%
+\contentsline {subsubsection}{\numberline {7.5.3}Вершины графа: логика обработки}{62}{subsubsection.7.5.3}%
+\contentsline {subsubsection}{\numberline {7.5.4}Инструмент RAG-поиска агента}{67}{subsubsection.7.5.4}%
+\contentsline {subsubsection}{\numberline {7.5.5}Запуск агента}{68}{subsubsection.7.5.5}%
+\contentsline {subsubsection}{\numberline {7.5.6}Универсальный клиент внешних API}{69}{subsubsection.7.5.6}%
+\contentsline {section}{\numberline {8}Описание предметной области и структуры данных}{71}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Обоснование выбора и источник данных}{71}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Логическая структура базы данных}{71}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}Специфика хранения метаинформации}{72}{subsection.8.3}%
+\contentsline {subsection}{\numberline {8.4}Фрагменты данных}{72}{subsection.8.4}%
+\contentsline {subsection}{\numberline {8.5}Подготовка данных для RAG-конвейера}{73}{subsection.8.5}%
+\contentsline {section}{\numberline {9}Сравнение LLM моделей для Text-to-SQL}{74}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Анализ метрик}{75}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Влияние режима самокоррекции}{76}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}Сравнение моделей}{76}{subsection.9.3}%
+\contentsline {subsubsection}{\numberline {9.3.1}Qwen/Qwen3-Coder-Next}{76}{subsubsection.9.3.1}%
+\contentsline {subsubsection}{\numberline {9.3.2}GLM-4.7}{77}{subsubsection.9.3.2}%
+\contentsline {subsubsection}{\numberline {9.3.3}GigaChat-2}{77}{subsubsection.9.3.3}%
+\contentsline {subsection}{\numberline {9.4}Сложные запросы}{78}{subsection.9.4}%
+\contentsline {subsection}{\numberline {9.5}Вывод}{78}{subsection.9.5}%
+\contentsline {section}{\numberline {10}Техническая документация и руководство пользователей}{80}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Роли пользователей системы}{80}{subsection.10.1}%
+\contentsline {subsection}{\numberline {10.2}Руководство конечного пользователя}{80}{subsection.10.2}%
+\contentsline {subsubsection}{\numberline {10.2.1}Загрузка документов в базу знаний}{80}{subsubsection.10.2.1}%
+\contentsline {subsubsection}{\numberline {10.2.2}Работа с чатом}{80}{subsubsection.10.2.2}%
+\contentsline {subsection}{\numberline {10.3}Руководство администратора}{81}{subsection.10.3}%
+\contentsline {subsubsection}{\numberline {10.3.1}Развёртывание системы}{81}{subsubsection.10.3.1}%
+\contentsline {subsubsection}{\numberline {10.3.2}Настройка параметров индексации}{81}{subsubsection.10.3.2}%
+\contentsline {subsubsection}{\numberline {10.3.3}Мониторинг очереди задач}{81}{subsubsection.10.3.3}%
+\contentsline {section}{\numberline {11}Порядок внедрения и область применения}{82}{section.11}%
+\contentsline {subsection}{\numberline {11.1}Целевая аудитория и бизнес-контекст}{82}{subsection.11.1}%
+\contentsline {section}{\numberline {12}Характеристика достигнутых результатов}{83}{section.12}%
+\contentsline {subsection}{\numberline {12.1}Скорость обработки запросов}{83}{subsection.12.1}%
+\contentsline {subsection}{\numberline {12.2}Точность поиска}{83}{subsection.12.2}%
+\contentsline {subsection}{\numberline {12.3}Надёжность агентного модуля}{83}{subsection.12.3}%
+\contentsline {subsection}{\numberline {12.4}Масштабируемость}{83}{subsection.12.4}%
+\contentsline {subsection}{\numberline {12.5}Конфиденциальность данных}{84}{subsection.12.5}%
+\contentsline {structure}{\numberline {}ЗАКЛЮЧЕНИЕ}{85}{structure.5}%
+\contentsline {structure}{\numberline {}СПИСОК~ИСПОЛЬЗОВАННЫХ~ИСТОЧНИКОВ}{86}{structure.6}%
+\contentsfinish 

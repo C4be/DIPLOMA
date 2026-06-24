@@ -1,0 +1,300 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\@writefile{toc}{\contentsline {section}{\numberline {7}Программная реализация}{51}{section.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.1}Сервис векторизации текста (Embedding Model Service)}{51}{subsection.7.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.1.1}Класс модели эмбеддингов}{51}{subsubsection.7.1.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Реализация класса \texttt  {EmbeddingModel} с использованием семантических префиксов}}{51}{figure.caption.7}\protected@file@percent }
+\newlabel{code_1}{{6}{51}{Реализация класса \texttt {EmbeddingModel} с использованием семантических префиксов}{figure.caption.7}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.1.2}Инициализация сервиса и REST API}{51}{subsubsection.7.1.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Инициализация модели через \texttt  {lifespan} FastAPI и определение эндпоинтов векторизации}}{52}{figure.caption.8}\protected@file@percent }
+\newlabel{code_2}{{7}{52}{Инициализация модели через \texttt {lifespan} FastAPI и определение эндпоинтов векторизации}{figure.caption.8}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.2}Конвейер индексации (Ingest Pipeline Service)}{52}{subsection.7.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.2.1}Приём запроса и постановка задачи в очередь}{52}{subsubsection.7.2.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces API-эндпоинт приёма \texttt  {file\_id} и постановки задачи в очередь Redis}}{53}{figure.caption.9}\protected@file@percent }
+\newlabel{code_3}{{8}{53}{API-эндпоинт приёма \texttt {file\_id} и постановки задачи в очередь Redis}{figure.caption.9}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.2.2}Сервис управления очередью задач}{53}{subsubsection.7.2.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Сервис \texttt  {QueueService} для работы с Redis Queue}}{54}{figure.caption.10}\protected@file@percent }
+\newlabel{code_4}{{9}{54}{Сервис \texttt {QueueService} для работы с Redis Queue}{figure.caption.10}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.2.3}Запуск фонового воркера}{54}{subsubsection.7.2.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Запуск фонового воркера, обрабатывающего очередь \texttt  {ingestion}}}{55}{figure.caption.11}\protected@file@percent }
+\newlabel{code_5}{{10}{55}{Запуск фонового воркера, обрабатывающего очередь \texttt {ingestion}}{figure.caption.11}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.2.4}Сервис векторизации и сохранения в ChromaDB}{55}{subsubsection.7.2.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Метод \texttt  {VectorService} для получения эмбеддингов и сохранения в ChromaDB}}{56}{figure.caption.12}\protected@file@percent }
+\newlabel{code_6}{{11}{56}{Метод \texttt {VectorService} для получения эмбеддингов и сохранения в ChromaDB}{figure.caption.12}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.2.5}Загрузка файла из MinIO во временное хранилище}{56}{subsubsection.7.2.5}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Загрузка файла из MinIO во временную директорию \texttt  {.tmp}}}{57}{figure.caption.13}\protected@file@percent }
+\newlabel{code_7}{{12}{57}{Загрузка файла из MinIO во временную директорию \texttt {.tmp}}{figure.caption.13}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.3}Конвейер поиска (Retrieval Pipeline Service)}{57}{subsection.7.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces Метод семантического поиска в \texttt  {VectorService} для retrieval-пайплайна}}{58}{figure.caption.14}\protected@file@percent }
+\newlabel{code_8}{{13}{58}{Метод семантического поиска в \texttt {VectorService} для retrieval-пайплайна}{figure.caption.14}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces Эндпоинт retrieval-сервиса для поиска релевантных фрагментов}}{59}{figure.caption.15}\protected@file@percent }
+\newlabel{code_9}{{14}{59}{Эндпоинт retrieval-сервиса для поиска релевантных фрагментов}{figure.caption.15}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.4}Сервис доступа к базе данных (DB Connector Service)}{59}{subsection.7.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces Многоуровневая проверка безопасности SQL-запросов в DB Connector Service}}{60}{figure.caption.16}\protected@file@percent }
+\newlabel{code_10}{{15}{60}{Многоуровневая проверка безопасности SQL-запросов в DB Connector Service}{figure.caption.16}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {16}{\ignorespaces Эндпоинты DB Connector Service для получения схемы базы данных}}{61}{figure.caption.17}\protected@file@percent }
+\newlabel{code_11}{{16}{61}{Эндпоинты DB Connector Service для получения схемы базы данных}{figure.caption.17}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.5}Агентный модуль (Agent)}{61}{subsection.7.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.5.1}Структура состояния агента}{61}{subsubsection.7.5.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {17}{\ignorespaces Определение состояния агента (\texttt  {TypedDict}) для LangGraph}}{61}{figure.caption.18}\protected@file@percent }
+\newlabel{code_12}{{17}{61}{Определение состояния агента (\texttt {TypedDict}) для LangGraph}{figure.caption.18}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.5.2}Граф агента (LangGraph)}{62}{subsubsection.7.5.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {18}{\ignorespaces Построение графа агента с использованием LangGraph}}{62}{figure.caption.19}\protected@file@percent }
+\newlabel{code_13}{{18}{62}{Построение графа агента с использованием LangGraph}{figure.caption.19}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.5.3}Вершины графа: логика обработки}{62}{subsubsection.7.5.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {19}{\ignorespaces Вершина графа: переписывание пользовательского запроса для RAG}}{63}{figure.caption.20}\protected@file@percent }
+\newlabel{code_14}{{19}{63}{Вершина графа: переписывание пользовательского запроса для RAG}{figure.caption.20}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {20}{\ignorespaces Вершина графа: вызов инструмента \texttt  {rag\_search}}}{63}{figure.caption.21}\protected@file@percent }
+\newlabel{code_15}{{20}{63}{Вершина графа: вызов инструмента \texttt {rag\_search}}{figure.caption.21}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {21}{\ignorespaces Вершина графа: генерация SQL-запроса на основе RAG-контекста}}{64}{figure.caption.22}\protected@file@percent }
+\newlabel{code_16}{{21}{64}{Вершина графа: генерация SQL-запроса на основе RAG-контекста}{figure.caption.22}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {22}{\ignorespaces Вершина графа: выполнение SQL через DB Connector Service}}{64}{figure.caption.23}\protected@file@percent }
+\newlabel{code_17}{{22}{64}{Вершина графа: выполнение SQL через DB Connector Service}{figure.caption.23}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {23}{\ignorespaces Вершина графа: анализ результата SQL и вынесение вердикта}}{65}{figure.caption.24}\protected@file@percent }
+\newlabel{code_18}{{23}{65}{Вершина графа: анализ результата SQL и вынесение вердикта}{figure.caption.24}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {24}{\ignorespaces Функция условной маршрутизации на основе вердикта критика}}{66}{figure.caption.25}\protected@file@percent }
+\newlabel{code_19}{{24}{66}{Функция условной маршрутизации на основе вердикта критика}{figure.caption.25}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {25}{\ignorespaces Вершина графа: запрос схемы проблемных таблиц}}{66}{figure.caption.26}\protected@file@percent }
+\newlabel{code_20}{{25}{66}{Вершина графа: запрос схемы проблемных таблиц}{figure.caption.26}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {26}{\ignorespaces Вершина графа: улучшение SQL с учётом замечаний и схемы}}{67}{figure.caption.27}\protected@file@percent }
+\newlabel{code_21}{{26}{67}{Вершина графа: улучшение SQL с учётом замечаний и схемы}{figure.caption.27}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.5.4}Инструмент RAG-поиска агента}{67}{subsubsection.7.5.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {27}{\ignorespaces Определение инструмента \texttt  {rag\_search} как LangChain Tool}}{68}{figure.caption.28}\protected@file@percent }
+\newlabel{code_22}{{27}{68}{Определение инструмента \texttt {rag\_search} как LangChain Tool}{figure.caption.28}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.5.5}Запуск агента}{68}{subsubsection.7.5.5}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {28}{\ignorespaces Функция запуска агента и инвокации графа}}{69}{figure.caption.29}\protected@file@percent }
+\newlabel{code_23}{{28}{69}{Функция запуска агента и инвокации графа}{figure.caption.29}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.5.6}Универсальный клиент внешних API}{69}{subsubsection.7.5.6}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {29}{\ignorespaces Единая утилита \texttt  {call\_api} для межсервисных вызовов}}{70}{figure.caption.30}\protected@file@percent }
+\newlabel{code_24}{{29}{70}{Единая утилита \texttt {call\_api} для межсервисных вызовов}{figure.caption.30}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {8}Описание предметной области и структуры данных}{71}{section.8}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.1}Обоснование выбора и источник данных}{71}{subsection.8.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.2}Логическая структура базы данных}{71}{subsection.8.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Функциональные блоки логической модели}}{72}{table.caption.31}\protected@file@percent }
+\newlabel{tab:erd_blocks}{{2}{72}{Функциональные блоки логической модели}{table.caption.31}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.3}Специфика хранения метаинформации}{72}{subsection.8.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Пример структуры JSONB-поля}}{72}{table.caption.32}\protected@file@percent }
+\newlabel{tab:json_example}{{3}{72}{Пример структуры JSONB-поля}{table.caption.32}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.4}Фрагменты данных}{72}{subsection.8.4}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Фрагмент справочника воздушных судов}}{73}{table.caption.33}\protected@file@percent }
+\newlabel{tab:aircrafts}{{4}{73}{Фрагмент справочника воздушных судов}{table.caption.33}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Фрагмент данных о рейсах}}{73}{table.caption.34}\protected@file@percent }
+\newlabel{tab:flights}{{5}{73}{Фрагмент данных о рейсах}{table.caption.34}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.5}Подготовка данных для RAG-конвейера}{73}{subsection.8.5}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Пример документа для векторного хранилища}}{73}{table.caption.35}\protected@file@percent }
+\newlabel{tab:rag_doc}{{6}{73}{Пример документа для векторного хранилища}{table.caption.35}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {9}Сравнение LLM моделей для Text-to-SQL}{74}{section.9}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {30}{\ignorespaces Метрики LLM без режима самокоррекции}}{75}{figure.caption.36}\protected@file@percent }
+\newlabel{llm_before}{{30}{75}{Метрики LLM без режима самокоррекции}{figure.caption.36}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {31}{\ignorespaces Метрики LLM после режима самокоррекции}}{75}{figure.caption.37}\protected@file@percent }
+\newlabel{llm_after}{{31}{75}{Метрики LLM после режима самокоррекции}{figure.caption.37}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.1}Анализ метрик}{75}{subsection.9.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.2}Влияние режима самокоррекции}{76}{subsection.9.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.3}Сравнение моделей}{76}{subsection.9.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {9.3.1}Qwen/Qwen3-Coder-Next}{76}{subsubsection.9.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {9.3.2}GLM-4.7}{77}{subsubsection.9.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {9.3.3}GigaChat-2}{77}{subsubsection.9.3.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.4}Сложные запросы}{78}{subsection.9.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.5}Вывод}{78}{subsection.9.5}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces Сравнительные метрики LLM-провайдеров (до и после самокоррекции)}}{78}{table.caption.38}\protected@file@percent }
+\newlabel{tab:llm_metrics}{{7}{78}{Сравнительные метрики LLM-провайдеров (до и после самокоррекции)}{table.caption.38}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {32}{\ignorespaces Прирост производительности с режимом самокоррекции}}{79}{figure.caption.39}\protected@file@percent }
+\newlabel{llm_gain}{{32}{79}{Прирост производительности с режимом самокоррекции}{figure.caption.39}{}}
+\@setckpt{contents/chapter3_implement_solution/for_include}{
+\setcounter{page}{80}
+\setcounter{equation}{9}
+\setcounter{enumi}{5}
+\setcounter{enumii}{0}
+\setcounter{enumiii}{0}
+\setcounter{enumiv}{0}
+\setcounter{footnote}{0}
+\setcounter{mpfootnote}{0}
+\setcounter{part}{0}
+\setcounter{section}{9}
+\setcounter{subsection}{5}
+\setcounter{subsubsection}{0}
+\setcounter{paragraph}{0}
+\setcounter{subparagraph}{0}
+\setcounter{figure}{32}
+\setcounter{table}{7}
+\setcounter{structure}{4}
+\setcounter{float@type}{8}
+\setcounter{caption@flags}{2}
+\setcounter{continuedfloat}{0}
+\setcounter{subfigure}{0}
+\setcounter{subtable}{0}
+\setcounter{LT@tables}{0}
+\setcounter{LT@chunks}{0}
+\setcounter{parentequation}{0}
+\setcounter{@stackindex}{0}
+\setcounter{ROWcellindex@}{0}
+\setcounter{linenumber}{1}
+\setcounter{LN@truepage}{156}
+\setcounter{lastpagecount}{0}
+\setcounter{firstDigit}{6}
+\setcounter{secondDigit}{3}
+\setcounter{tabx@nest}{0}
+\setcounter{listtotal}{0}
+\setcounter{listcount}{0}
+\setcounter{liststart}{0}
+\setcounter{liststop}{0}
+\setcounter{citecount}{0}
+\setcounter{citetotal}{0}
+\setcounter{multicitecount}{0}
+\setcounter{multicitetotal}{0}
+\setcounter{instcount}{33}
+\setcounter{maxnames}{3}
+\setcounter{minnames}{1}
+\setcounter{maxitems}{3}
+\setcounter{minitems}{1}
+\setcounter{citecounter}{0}
+\setcounter{maxcitecounter}{0}
+\setcounter{savedcitecounter}{0}
+\setcounter{uniquelist}{0}
+\setcounter{uniquename}{0}
+\setcounter{refsection}{0}
+\setcounter{refsegment}{0}
+\setcounter{maxextratitle}{0}
+\setcounter{maxextratitleyear}{0}
+\setcounter{maxextraname}{30}
+\setcounter{maxextradate}{0}
+\setcounter{maxextraalpha}{0}
+\setcounter{abbrvpenalty}{50}
+\setcounter{highnamepenalty}{50}
+\setcounter{lownamepenalty}{25}
+\setcounter{maxparens}{3}
+\setcounter{parenlevel}{0}
+\setcounter{blx@maxsection}{0}
+\setcounter{mincomprange}{10}
+\setcounter{maxcomprange}{100000}
+\setcounter{mincompwidth}{1}
+\setcounter{afterword}{0}
+\setcounter{savedafterword}{0}
+\setcounter{annotator}{0}
+\setcounter{savedannotator}{0}
+\setcounter{author}{0}
+\setcounter{savedauthor}{0}
+\setcounter{bookauthor}{0}
+\setcounter{savedbookauthor}{0}
+\setcounter{commentator}{0}
+\setcounter{savedcommentator}{0}
+\setcounter{editor}{0}
+\setcounter{savededitor}{0}
+\setcounter{editora}{0}
+\setcounter{savededitora}{0}
+\setcounter{editorb}{0}
+\setcounter{savededitorb}{0}
+\setcounter{editorc}{0}
+\setcounter{savededitorc}{0}
+\setcounter{foreword}{0}
+\setcounter{savedforeword}{0}
+\setcounter{holder}{0}
+\setcounter{savedholder}{0}
+\setcounter{introduction}{0}
+\setcounter{savedintroduction}{0}
+\setcounter{namea}{0}
+\setcounter{savednamea}{0}
+\setcounter{nameb}{0}
+\setcounter{savednameb}{0}
+\setcounter{namec}{0}
+\setcounter{savednamec}{0}
+\setcounter{translator}{0}
+\setcounter{savedtranslator}{0}
+\setcounter{shortauthor}{0}
+\setcounter{savedshortauthor}{0}
+\setcounter{shorteditor}{0}
+\setcounter{savedshorteditor}{0}
+\setcounter{booktranslator}{0}
+\setcounter{savedbooktranslator}{0}
+\setcounter{bookcommentator}{0}
+\setcounter{savedbookcommentator}{0}
+\setcounter{bookannotator}{0}
+\setcounter{savedbookannotator}{0}
+\setcounter{bookintroduction}{0}
+\setcounter{savedbookintroduction}{0}
+\setcounter{bookforeword}{0}
+\setcounter{savedbookforeword}{0}
+\setcounter{bookafterword}{0}
+\setcounter{savedbookafterword}{0}
+\setcounter{labelname}{0}
+\setcounter{savedlabelname}{0}
+\setcounter{institution}{0}
+\setcounter{savedinstitution}{0}
+\setcounter{lista}{0}
+\setcounter{savedlista}{0}
+\setcounter{listb}{0}
+\setcounter{savedlistb}{0}
+\setcounter{listc}{0}
+\setcounter{savedlistc}{0}
+\setcounter{listd}{0}
+\setcounter{savedlistd}{0}
+\setcounter{liste}{0}
+\setcounter{savedliste}{0}
+\setcounter{listf}{0}
+\setcounter{savedlistf}{0}
+\setcounter{location}{0}
+\setcounter{savedlocation}{0}
+\setcounter{organization}{0}
+\setcounter{savedorganization}{0}
+\setcounter{origlocation}{0}
+\setcounter{savedoriglocation}{0}
+\setcounter{origpublisher}{0}
+\setcounter{savedorigpublisher}{0}
+\setcounter{publisher}{0}
+\setcounter{savedpublisher}{0}
+\setcounter{language}{0}
+\setcounter{savedlanguage}{0}
+\setcounter{origlanguage}{0}
+\setcounter{savedoriglanguage}{0}
+\setcounter{bookoriglanguage}{0}
+\setcounter{savedbookoriglanguage}{0}
+\setcounter{specdata}{0}
+\setcounter{savedspecdata}{0}
+\setcounter{credits}{0}
+\setcounter{savedcredits}{0}
+\setcounter{bookcredits}{0}
+\setcounter{savedbookcredits}{0}
+\setcounter{editioncredits}{0}
+\setcounter{savededitioncredits}{0}
+\setcounter{pageref}{0}
+\setcounter{savedpageref}{0}
+\setcounter{textcitecount}{0}
+\setcounter{textcitetotal}{0}
+\setcounter{textcitemaxnames}{0}
+\setcounter{biburlbigbreakpenalty}{100}
+\setcounter{biburlbreakpenalty}{200}
+\setcounter{biburlnumpenalty}{0}
+\setcounter{biburlucpenalty}{0}
+\setcounter{biburllcpenalty}{0}
+\setcounter{smartand}{1}
+\setcounter{blx@gost@pointer}{0}
+\setcounter{bbx:relatedcount}{0}
+\setcounter{bbx:relatedtotal}{0}
+\setcounter{section@level}{0}
+\setcounter{Item}{5}
+\setcounter{Hfootnote}{0}
+\setcounter{Hy@AnnotLevel}{0}
+\setcounter{bookmark@seq@number}{0}
+\setcounter{totalfigures}{32}
+\setcounter{xassoccnt@total@totalfigures}{32}
+\setcounter{totaltables}{7}
+\setcounter{xassoccnt@total@totaltables}{7}
+\setcounter{citenum}{0}
+\setcounter{citenum@totc}{136}
+\setcounter{totalcites}{0}
+\setcounter{xassoccnt@total@totalcites}{136}
+\setcounter{apps}{0}
+\setcounter{totalappendices}{0}
+\setcounter{xassoccnt@total@totalappendices}{0}
+\setcounter{lstnumber}{1}
+\setcounter{definition}{0}
+\setcounter{theorem}{0}
+\setcounter{corollary}{0}
+\setcounter{lemma}{0}
+\setcounter{example}{0}
+\setcounter{AlgoLine}{0}
+\setcounter{algocfline}{0}
+\setcounter{algocfproc}{0}
+\setcounter{algocf}{0}
+\setcounter{lstlisting}{0}
+}
